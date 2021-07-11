@@ -1,0 +1,267 @@
+[[plugins]]                                    
+repo = 'Shougo/dein.vim'
+
+# ---------------------------------------
+#          colorscheme ayu
+# ---------------------------------------
+[[plugins]]
+repo = 'ayu-theme/ayu-vim'
+name = 'ayu'
+
+# ---------------------------------------
+#          colorscheme aylin
+# ---------------------------------------
+[[plugins]]
+repo = 'AhmedAbdulrahman/aylin.vim'
+name = 'aylin'
+hook_add = '''
+  colorscheme aylin
+  highlight Normal ctermbg=none guibg=NONE
+  highlight NonText ctermbg=none guibg=NONE
+  highlight LineNr ctermbg=none guibg=NONE
+  highlight Folded ctermbg=none guibg=NONE
+  highlight EndOfBuffer ctermbg=none guibg=NONE
+'''
+
+# ---------------------------------------
+#               背景透過
+# ---------------------------------------
+[[plugins]] 
+repo = 'miyakogi/seiya.vim'
+    
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'alampros/vim-styled-jsx'
+on_ft = ['javascript', 'javascript.jsx']
+
+
+# -----------------------------------------
+#           colorscheme dracula
+# -----------------------------------------
+[[plugins]]
+repo = 'dracula/vim'
+name = 'dracula'
+
+[[plugins]]
+repo = 'tobyS/pdv'
+
+[[plugins]]
+repo = 'tobyS/vmustache'
+
+# -----------------------------------------
+#           colorscheme solarized
+# -----------------------------------------
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
+
+# -----------------------------------------
+#            Fugitive Settings
+# -----------------------------------------
+#  git plugin
+#  command list
+#  Gstatus
+#  Gwrite
+#  Gcommit
+#  Gblame
+#  Gdiff
+#  Gmerge
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_add = """
+source ~/.config/nvim/plugins/plugins-vim-fugitive.vim
+"""
+
+# -----------------------------------------
+#              Git Gutters
+#          < show diff + - ~ >
+# -----------------------------------------
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = """
+  set updatetime=100
+  set signcolumn=yes
+"""
+
+[[plugins]]
+repo = 'terry/vim-expand-region'
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+[[plugins]]
+repo = 'tpope/vim-rhubarb'
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
+[[plugins]]
+repo = 'mlaursen/vim-react-snippets'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'peitalin/vim-jsx-typescript'
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+
+# -----------------------------------------
+#               CocSettings
+# -----------------------------------------
+#  tabとshift+tabで補完候補切り替え
+#  CRで確定
+[[plugins]]                                    
+repo = "neoclide/coc.nvim"
+merge = 0
+rev  = "release"
+hook_add = """
+source ~/.config/nvim/plugins/coc.rc.vim
+"""
+
+[[plugins]]
+repo = "Shougo/defx.nvim"
+depends = ["defx-git", 'defx.icons']
+hook_add = """
+ source ~/.config/nvim/plugins/defx.rc.vim
+"""
+
+[[plugins]]
+repo = 'kristijanhusak/defx-icons'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-git'
+
+[[plugins]]
+repo = "Shougo/denite.nvim"
+hook_add = """
+  source ~/.config/nvim/plugins/denite.rc.vim
+"""
+
+[[plugins]]
+repo = 'Shougo/deoppet.nvim'
+
+[[plugins]]
+repo = "Shougo/neocomplete.vim"
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'maximbaz/lightline-ale'
+depends  = ['lightline.vim', 'ale']
+
+[[plugins]]
+repo = 'dart-lang/dart-vim-plugin'
+
+[[plugins]]
+repo = 'thosakwe/vim-flutter'
+
+# ---------------------------------------
+#             comment plugin
+# ---------------------------------------
+# コメントが便利になる
+# gccで現在の行をコメントアウト
+# visualでgcで選択している行をコメントアウト
+
+# ---------------------------------------
+#              undo plugin
+# ---------------------------------------
+[[plugins]]
+repo = 'mbbill/undotree'
+hook_add = """
+nmap <F5> :Und<CR>
+"""
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+# "Hello world!" cs"' -> 'Hello world!'
+# ds' -> Hello world!のように'を削除
+# 矩形ビジュアルモードでHello world!を選択した後でS"を入力すると"Hello world!"のように"で囲むことができる
+
+
+# -----------------------------------------
+#           neovim terminal 強化
+# -----------------------------------------
+# :Tnew -> open terminal
+# :T(command) -> execute command
+# C-w -> exit terminal mode.
+[[plugins]]
+repo = 'kassio/neoterm'
+hook_add = """
+  let g:neoterm_default_mod='belowright'
+  let g:neoterm_size=10
+  let g:neoterm_autoscroll=1
+  tnoremap <silent> <C-w> <C-\><C-n><C-w>
+"""
+
+# -----------------------------------------
+#          自作CheatSheet plugin
+# -----------------------------------------
+# :Cheat -> open cheatsheet
+[[plugins]]
+repo = 'reireias/vim-cheatsheet'
+hook_add = """
+  let g:cheatsheet#cheat_file = '~/.config/nvim/cheatsheet.md'
+"""
+
+# -----------------------------------------
+#          supertab (tab補完)
+# -----------------------------------------
+[[plugins]]
+repo = 'ervandew/supertab'
+
+
+# -----------------------------------------
+#             vim-repeat .
+# -----------------------------------------
+[[plugins]]
+repo = "tpope/vim-repeat"
+
+
+# -----------------------------------------
+#             vim-easy-align 
+# -----------------------------------------
+[[plugins]]
+repo = "junegunn/vim-easy-align"
+hook_add = """
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+"""
+
+# -----------------------------------------
+#         vim-highlightedyank 
+# -----------------------------------------
+[[plugins]]
+repo = 'machakann/vim-highlightedyank'
+hook_add = """
+let g:highlightedyank_highlight_duration = 1000
+"""
+
+
+# ---------------------------------------
+#               phpactor
+# ---------------------------------------
+[[plugins]]
+repo = 'phpactor/phpactor'
+on_ft = ['php']
+build = 'composer install'
+
