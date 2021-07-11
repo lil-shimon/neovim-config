@@ -33,8 +33,9 @@
 - `C-w`          :  exit terminal mode
 
 
-## dein 
+## command
 
 - `:call dein#install()`  :  plugin install
+- `:call dein#update()`  :  plugin update
 - `:call {plugin name}#Status()`  : check plugin install correctly 
 

@@ -178,6 +178,8 @@ repo = 'thosakwe/vim-flutter'
 # コメントが便利になる
 # gccで現在の行をコメントアウト
 # visualでgcで選択している行をコメントアウト
+[[plugins]]
+repo = "tpope/vim-commentary"
 
 # ---------------------------------------
 #              undo plugin
