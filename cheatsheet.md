@@ -13,6 +13,10 @@
 - `gaip   = `  : = の位置で揃える (vim-easy-align)
 - `gaip  *= `  : = の位置で揃える (vim-easy-align)
 - `gaip* *= `  : = の位置で揃える
+- `:call dein#install()`  :  plugin install
+- `:call dein#update()`  :  plugin update
+- `:call {plugin name}#Status()`  : check plugin install correctly 
+- `:PreviewMarkdown` : preview markdown using mdr
 
 
 ## ale linter
@@ -31,11 +35,4 @@
 - `:Tnew`        :  open terminal
 - `T {command}`  :  execute command
 - `C-w`          :  exit terminal mode
-
-
-## command
-
-- `:call dein#install()`  :  plugin install
-- `:call dein#update()`  :  plugin update
-- `:call {plugin name}#Status()`  : check plugin install correctly 
 
