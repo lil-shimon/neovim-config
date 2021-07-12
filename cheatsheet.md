@@ -42,6 +42,8 @@
 
 - `clg`        :  console.log
 - `imp`        :  import {} from ""
+- `imr`        :  import React from 'react'
+- `ec`        :  export const func
 
 
 ## toml snippets
