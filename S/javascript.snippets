@@ -32,3 +32,14 @@ export const $1 = ($2) => {
 		)
 }
 endsnippet
+
+
+# ---------------------------------------
+#        document.getElementById
+# ---------------------------------------
+snippet ele "document.getElementById" b
+if (document.getElementById('$1')) {
+    ReactDOM.render(<$2/>, document.getElementById('$1'))
+}
+endsnippet
+
