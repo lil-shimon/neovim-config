@@ -41,8 +41,6 @@ highlight EndOfBuffer ctermbg=none
 let g:seiya_auto_enable=1 "背景透過 for vim
 let g:seiya_target_groups = has('nvim') ? ['guibg'] : ['ctermbg'] "for neovim
 
-" deinに書いたaylinの設定が機能しなくなったので、init.vimにも追加
-colorscheme aylin
 
 "-----------------------------------------
 "              easymotion
@@ -239,10 +237,6 @@ nnoremap <silent><C-f> :<C-u>Defx<CR>
 	  \ defx#do_action('change_vim_cwd')
 	endfunction
 
-  " vim-expand_region
-  vmap v <Plug>(expand_region_expand)
-  vmap <C-v> <Plug>(expand_region_shrink)
-
   "open-browser
   nmap <Leader>b <Plug>(openbrowser-smart-search)
   vmap <Leader>b <Plug>(openbrowser-smart-search)
@@ -281,3 +275,4 @@ let s:toml_dir = expand('~/.config/nvim')
   endif     
 
   let g:dein#auto_recache = 1
+

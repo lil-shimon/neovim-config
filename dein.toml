@@ -32,10 +32,16 @@ repo = 'miyakogi/seiya.vim'
 [[plugins]]
 repo = 'Yggdroot/indentLine'
 
+# ---------------------------------------
+#             vim-javascript
+# ---------------------------------------
 [[plugins]]
 repo = 'pangloss/vim-javascript'
 on_ft = ['javascript', 'javascript.jsx']
 
+# ---------------------------------------
+#             vim-styled-jsx
+# ---------------------------------------
 [[plugins]]
 repo = 'alampros/vim-styled-jsx'
 on_ft = ['javascript', 'javascript.jsx']
@@ -88,9 +94,10 @@ hook_add = """
   set signcolumn=yes
 """
 
-[[plugins]]
-repo = 'terry/vim-expand-region'
 
+# -----------------------------------------
+#             openbrowser.vim
+# -----------------------------------------
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 
@@ -275,7 +282,6 @@ build = 'composer install'
 [[plugins]]
 repo = "skanehira/preview-markdown.vim"
 hook_add = """
-let g:preview_markdown_parser=glow
 let g:preview_markdown_auto_update = 1
 """
 
