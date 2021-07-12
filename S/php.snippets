@@ -1,3 +1,43 @@
-snippet toc "table of contents tag"
-<div id="toc">this is toc snippet</div>   
+# ---------------------------------------
+#             basic func
+# ---------------------------------------
+snippet func "Description" b
+public function $1($2 $3)
+{
+				$4
+}
 endsnippet
+
+
+# ---------------------------------------
+#             php model
+# ---------------------------------------
+snippet mdl "basic model" b
+$1 = $this->$2->$3;
+endsnippet
+
+
+# ---------------------------------------
+#             foreach
+# ---------------------------------------
+snippet fr "foreach" b
+foreach ($1 as $2) {
+		$3;
+}
+endsnippet
+
+
+# ---------------------------------------
+#             transaction
+# ---------------------------------------
+snippet trans "transaction" b
+\DB::beginTransaction();
+try {
+		$1;
+		\DB::commit();
+} catch (Throwable $th) {
+		\DB::rollback();
+		\Log::info($th);
+}
+endsnippet
+

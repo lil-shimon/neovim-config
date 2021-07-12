@@ -52,3 +52,7 @@
 
 - `plu`        :  plugin install format (basic)
 
+
+## php snippets
+
+- `func`        :  basic function
