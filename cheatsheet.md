@@ -56,3 +56,8 @@
 ## php snippets
 
 - `func`        :  basic function
+- `mdl`        :  basic model
+- `fr`        :  foreach
+- `trans`        :  transaction
+
+
