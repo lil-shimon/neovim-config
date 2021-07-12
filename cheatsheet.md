@@ -7,6 +7,7 @@
 - `space b`  :  open browser smart search by key word on cursor
 - `<leader>j`  :  auto import (React)
 - `:h UltiSnips`  :  UltiSnips (snippets) help
+- `UltiSnipsEdit`  :  create the base of snippets file
 
 
 ## utils
