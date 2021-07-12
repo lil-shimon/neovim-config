@@ -42,7 +42,10 @@
 - `clg`        :  console.log
 - `imp`        :  import {} from ""
 - `imr`        :  import React from 'react'
-- `ec`        :  export const func
+- `ecr`        :  export const func
+- `ustl`        :  useStyles
+- `styl`        :  styled-components
+- `reactbase`        :  my react base component format
 
 
 ## toml snippets

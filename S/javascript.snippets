@@ -26,8 +26,10 @@ endsnippet
 # ---------------------------------------
 snippet ecr "export const" b
 export const $1 = ($2) => {
+		$3
 		return (
 				<>
+						$4
 				</>
 		)
 }
@@ -40,6 +42,46 @@ endsnippet
 snippet ele "document.getElementById" b
 if (document.getElementById('$1')) {
     ReactDOM.render(<$2/>, document.getElementById('$1'))
+}
+endsnippet
+
+
+# ---------------------------------------
+#        useStyles (material ui)
+# ---------------------------------------
+snippet ustl "Material Ui useStyles" b
+const useStyles = makeStyles((theme) => ({
+    $1: {
+        $2: '$3',
+    },
+		$4: {
+				$5
+		},
+}));
+endsnippet
+
+
+# ---------------------------------------
+#        		styled-components
+# ---------------------------------------
+snippet styl "styled-components" b
+const $1 = styled.$2`
+		$3
+`
+endsnippet
+
+# ---------------------------------------
+#        my react base format
+# ---------------------------------------
+snippet reactbase "export const" b
+import React from 'react'
+export const $1 = ($2) => {
+		$3
+		return (
+				<>
+						$4
+				</>
+		)
 }
 endsnippet
 
