@@ -5,6 +5,8 @@
 
 - `K`  :  カーソル上の文字の説明をみる
 - `space b`  :  open browser smart search by key word on cursor
+- `<leader>j`  :  auto import (React)
+- `:h UltiSnips`  :  UltiSnips (snippets) help
 
 
 ## utils

@@ -146,6 +146,7 @@ set expandtab                                                   " tabを複数�
 set tabstop=2                                                   " tabは半角2文字
 set shiftwidth=4                                                " tabの幅
 set autoindent
+set smartindent
 
 "Split window
 nmap ss :split<Return><C-w>w

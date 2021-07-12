@@ -9,7 +9,7 @@ repo = 'ayu-theme/ayu-vim'
 name = 'ayu'
 
 # ---------------------------------------
-#          colorscheme aylin
+#           colorscheme aylin
 # ---------------------------------------
 [[plugins]]
 repo = 'AhmedAbdulrahman/aylin.vim'
@@ -29,8 +29,21 @@ hook_add = '''
 [[plugins]] 
 repo = 'miyakogi/seiya.vim'
     
+
+# ---------------------------------------
+#               indentLine
+# ---------------------------------------
 [[plugins]]
 repo = 'Yggdroot/indentLine'
+
+
+# ---------------------------------------
+#             vim-js-indent
+#             js ts indent
+# ---------------------------------------
+[[plugins]]
+repo = "jason0x43/vim-js-indent"
+
 
 # ---------------------------------------
 #             vim-javascript
@@ -38,6 +51,9 @@ repo = 'Yggdroot/indentLine'
 [[plugins]]
 repo = 'pangloss/vim-javascript'
 on_ft = ['javascript', 'javascript.jsx']
+hook_add = """
+let g:javascript_indent_disable = 1
+"""
 
 # ---------------------------------------
 #             vim-styled-jsx
@@ -104,11 +120,26 @@ repo = 'tyru/open-browser.vim'
 [[plugins]]
 repo = 'tpope/vim-rhubarb'
 
+# -----------------------------------------
+#               ultisnips 
+# -----------------------------------------
 [[plugins]]
 repo = 'SirVer/ultisnips'
+hook_add = """
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories="~/.config/nvim/plugins/UltiSnips/"
+"""
+
+[[plugins]]
+repo = 'vim-snippets'
 
 [[plugins]]
 repo = 'mlaursen/vim-react-snippets'
+
+[[plugins]]
+repo = 'Galooshi/import-js'
 
 [[plugins]]
 repo = 'jiangmiao/auto-pairs'
@@ -121,6 +152,9 @@ repo = 'tpope/vim-endwise'
 
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
+hook_add = """
+let g:typescript_indent_disable = 1
+"""
 
 [[plugins]]
 repo = 'peitalin/vim-jsx-typescript'
