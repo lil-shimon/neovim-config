@@ -41,6 +41,9 @@ highlight EndOfBuffer ctermbg=none
 let g:seiya_auto_enable=1 "背景透過 for vim
 let g:seiya_target_groups = has('nvim') ? ['guibg'] : ['ctermbg'] "for neovim
 
+" deinに書いたaylinの設定が機能しなくなったので、init.vimにも追加
+colorscheme aylin
+
 "-----------------------------------------
 "              easymotion
 "-----------------------------------------
