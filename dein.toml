@@ -132,12 +132,6 @@ repo = 'tpope/vim-rhubarb'
 # -----------------------------------------
 [[plugins]]
 repo = 'SirVer/ultisnips'
-hook_add = """
-let g:UltiSnipsExpandTrigger="<leader><leader>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsSnippetDirectories="~/.config/nvim/UltiSnips/"
-"""
 
 
 [[plugins]]
