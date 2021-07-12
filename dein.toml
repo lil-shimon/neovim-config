@@ -1,8 +1,11 @@
+# ---------------------------------------
+#              dark power
+# ---------------------------------------
 [[plugins]]                                    
 repo = 'Shougo/dein.vim'
 
 # ---------------------------------------
-#          colorscheme ayu
+#            colorscheme ayu
 # ---------------------------------------
 [[plugins]]
 repo = 'ayu-theme/ayu-vim'
@@ -76,11 +79,13 @@ repo = 'tobyS/pdv'
 [[plugins]]
 repo = 'tobyS/vmustache'
 
+
 # -----------------------------------------
 #           colorscheme solarized
 # -----------------------------------------
 [[plugins]]
 repo = 'altercation/vim-colors-solarized'
+
 
 # -----------------------------------------
 #            Fugitive Settings
@@ -98,6 +103,7 @@ repo = 'tpope/vim-fugitive'
 hook_add = """
 source ~/.config/nvim/plugins/plugins-vim-fugitive.vim
 """
+
 
 # -----------------------------------------
 #              Git Gutters
@@ -120,6 +126,7 @@ repo = 'tyru/open-browser.vim'
 [[plugins]]
 repo = 'tpope/vim-rhubarb'
 
+
 # -----------------------------------------
 #               ultisnips 
 # -----------------------------------------
@@ -131,6 +138,7 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsSnippetDirectories="~/.config/nvim/UltiSnips/"
 """
+
 
 [[plugins]]
 repo = 'vim-snippets'
@@ -289,6 +297,7 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 """
+
 
 # -----------------------------------------
 #         vim-highlightedyank 

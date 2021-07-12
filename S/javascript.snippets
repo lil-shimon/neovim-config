@@ -1,0 +1,14 @@
+# ---------------------------------------
+#             console.log
+# ---------------------------------------
+snippet clg "console.log()" b
+console.log(${1:'$2', $3});
+endsnippet
+
+
+# ---------------------------------------
+#           import "" from ""
+# ---------------------------------------
+snippet imp "import from ''" b
+import { $1 } from '$2';
+endsnippet

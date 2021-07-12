@@ -39,3 +39,8 @@
 - `T {command}`  :  execute command
 - `C-w`          :  exit terminal mode
 
+
+## React snippets
+- `clg`        :  console.log
+- `imp`        :  import {} from ""
+
