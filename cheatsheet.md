@@ -96,6 +96,8 @@
 
 - `cls`        :  dart class (basic)
 - `cm`        :  dart comment that is like ///
+- `stt`        :  static define
+- `stc`        :  call static defined
 - `route`        :  simple route for materialApp in dart (flutter)
 
 
