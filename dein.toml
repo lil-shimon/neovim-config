@@ -328,3 +328,38 @@ hook_add = """
 let g:preview_markdown_auto_update = 1
 """
 
+
+# ---------------------------------------
+#             fzf install
+# ---------------------------------------
+[[plugins]] 
+repo = "junegunn/fzf"
+build = './install --all'
+
+# ---------------------------------------
+#               fzf.vim
+# ---------------------------------------
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
+
+# ---------------------------------------
+#             nerdtree
+# ---------------------------------------
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  let g:NERDTreeShowBookmarks=1
+  let g:NERDTreeShowHidden = 1
+  let g:NERDTreeDirArrows = 1
+  let NERDTreeIgnore = ['\.git$', 'node_modules']
+  autocmd StdinReadPre * let s:std_in=1
+  map <C-a> :NERDTreeToggle<CR>
+'''
+
+# ---------------------------------------
+#             nerdtree
+# ---------------------------------------
+[[plugins]] 
+repo = "preservim/nerdtree"
+

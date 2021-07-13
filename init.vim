@@ -29,6 +29,7 @@ let g:ale_fix_auto_save = 1
 " ローカルの設定ファイルを考慮する
 let g:ale_javascript_prettier_use_local_config = 1
 
+
 "-----------------------------------------
 "              ColorScheme
 "-----------------------------------------
@@ -135,6 +136,10 @@ nnoremap <Leader>q :q<CR>
 nnoremap <ESC><ESC> :nohlsearch<CR> 
 "space and . => open init.vim
 nnoremap <Leader>. :new ~/.config/nvim/init.vim<CR>
+
+"search files (fzf)
+nmap <C-P> :FZF<CR>
+
 
 "cursorl setting
 set ruler                                                       " カーソルの位置表示
