@@ -95,6 +95,7 @@
 ## dart snippets
 
 - `cls`        :  dart class (basic)
+- `cm`        :  dart comment that is like ///
 - `route`        :  simple route for materialApp in dart (flutter)
 
 
