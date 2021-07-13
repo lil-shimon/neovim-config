@@ -139,6 +139,7 @@ nnoremap <Leader>. :new ~/.config/nvim/init.vim<CR>
 "cursorl setting
 set ruler                                                       " カーソルの位置表示
 set cursorline                                                  " カーソルハイライト
+set cursorcolumn
 filetype on
 
 " tab setting
