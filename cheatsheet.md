@@ -46,6 +46,16 @@
 - `ustl`        :  useStyles
 - `styl`        :  styled-components
 - `reactbase`        :  my react base component format
+- `classes`        :  classes declaration for useStyles
+- `cm`        :  block comment
+- `cme`        :  expend block comment
+- `immakestyles`        :  import makeStyles
+- `rf`        :  react fragment
+- `jsx`        :  html in jsx
+- `us`        :  useState
+- `ue`        :  useState
+- `handler`        :  handler (w/ return)
+- `setarr`        :  setState for array
 
 
 ## toml snippets
