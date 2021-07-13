@@ -56,6 +56,8 @@
 - `ue`        :  useState
 - `handler`        :  handler (w/ return)
 - `setarr`        :  setState for array
+- `usecss`        :  useStyles css
+- `addcss`        :  add css line for useStyles
 
 
 ## toml snippets
