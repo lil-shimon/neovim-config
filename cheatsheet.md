@@ -18,6 +18,7 @@
 - `<C-j>`  :  next (UltiSnips)
 - `<C-k>`  :  before (UltiSnips)
 - `<C-a>`  :  show nerdtree
+- `:hi`  :  show what colors are you use on vim
 
 
 ## ale linter
