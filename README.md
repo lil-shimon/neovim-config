@@ -4,7 +4,7 @@ my neovim config
 if you want to try this neovim file, feel free to clone this.
  some commands are in cheatsheet.md.
  
- `:Cheat` call cheatsheet command.
+to open cheatsheet `:Cheat` 
  
 
 ## colorscheme
