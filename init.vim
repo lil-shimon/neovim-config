@@ -139,6 +139,7 @@ nnoremap <Leader>. :new ~/.config/nvim/init.vim<CR>
 
 "search files (fzf)
 nmap <C-P> :FZF<CR>
+nmap <Leader>f :Ag<CR>
 
 
 "cursorl setting

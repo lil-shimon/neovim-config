@@ -35,6 +35,7 @@
 - `Buffers`  :  open buffers
 - `Commits`  :  git commit
 - `<C-p>`  :  search files
+- `<leader>f`  :  search words in all files
 
 
 ## config keymap

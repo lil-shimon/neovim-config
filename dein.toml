@@ -19,8 +19,8 @@ name = 'ayu'
 repo = 'AhmedAbdulrahman/aylin.vim'
 name = 'aylin'
 hook_add = '''
-  autocmd ColorScheme * highlight CursorColumn ctermbg=1 guibg=#ff0000 
-  autocmd ColorScheme * highlight CursorLine ctermbg=1 guibg=#ff0000 
+  autocmd ColorScheme * highlight CursorColumn ctermbg=1 guibg=#fd98b9
+  autocmd ColorScheme * highlight CursorLine ctermbg=1 guibg=#99c6f1
   colorscheme aylin
   highlight Normal ctermbg=none guibg=NONE
   highlight NonText ctermbg=none guibg=NONE
