@@ -2,7 +2,7 @@
 my neovim config
 
 if you want to try this neovim file, feel free to clone this.
- some key commands are in cheatsheet.md.
+ some commands are in cheatsheet.md.
  
  `:Cheat` call cheatsheet command.
  
