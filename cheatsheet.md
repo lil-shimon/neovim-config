@@ -95,6 +95,7 @@
 ## dart snippets
 
 - `cls`        :  dart class (basic)
+- `route`        :  simple route for materialApp in dart (flutter)
 
 
 ## scss snippets

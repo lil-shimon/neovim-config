@@ -7,3 +7,14 @@ class $1 {
 		final $2 $3;
 }
 endsnippet
+
+# ---------------------------------------
+#             named route
+# ---------------------------------------
+snippet route "materialApp route" b
+initialRoute: "$1",
+routes: {
+		"$1": (context) => $2(),
+		"$3": (context) => $4(),
+},
+endsnippet
