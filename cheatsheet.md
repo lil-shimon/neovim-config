@@ -85,3 +85,10 @@
 - `ife`        :  if else statement
 - `elif`        :  if else else if
 
+
+## python snippets
+
+- `imr`        :  from import
+- `cls`        :  class statement (basic)
+- `dev`        :  def statement (basic)
+
