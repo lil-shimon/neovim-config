@@ -1,10 +1,11 @@
 # neovim-config
-my neovim config
 
-if you want to try this neovim file, feel free to clone this.
- some key commands are in cheatsheet.md.
+My dev env: tmux + neovim + alacritty
+
+If you want to try this neovim file, feel free to clone this.
+ Some commands are in cheatsheet.md.
  
- `:Cheat` call cheatsheet command.
+to open cheatsheet `:Cheat` 
  
 
 ## colorscheme
