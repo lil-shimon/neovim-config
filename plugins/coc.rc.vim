@@ -7,6 +7,7 @@ let g:coc_global_extensions = [
   \ 'coc-phpls',
   \ 'coc-rome',
   \ 'coc-snippets',
+  \ 'coc-flutter',
   \ 'coc-highlight'
   \ ]
 
