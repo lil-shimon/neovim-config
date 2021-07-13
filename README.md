@@ -1,5 +1,6 @@
 # neovim-config
 my neovim config
+My dev env: tmux + neovim + alacritty
 
 if you want to try this neovim file, feel free to clone this.
  some commands are in cheatsheet.md.
