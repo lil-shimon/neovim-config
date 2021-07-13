@@ -52,6 +52,7 @@
 - `immakestyles`        :  import makeStyles
 - `rf`        :  react fragment
 - `jsx`        :  html in jsx
+- `cln`        :  className def
 - `us`        :  useState
 - `ue`        :  useState
 - `handler`        :  handler (w/ return)
