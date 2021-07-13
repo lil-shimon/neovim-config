@@ -75,3 +75,13 @@
 ## dart snippets
 
 - `cls`        :  dart class (basic)
+
+
+## scss snippets
+
+- `sc`        :  base css format
+- `var`        :  declare variable
+- `if`        :  if statement
+- `ife`        :  if else statement
+- `elif`        :  if else else if
+
