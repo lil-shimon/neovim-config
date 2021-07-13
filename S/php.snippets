@@ -2,12 +2,22 @@
 #             basic func
 # ---------------------------------------
 snippet func "Description" b
-public function $1($2 $3)
+public function $1($2)
 {
-				$4
+				$3; 
 }
 endsnippet
 
+
+# ---------------------------------------
+#             return func
+# ---------------------------------------
+snippet funcr "simple return function" b
+public function $1($2)
+{
+				return $3;
+}
+endsnippet
 
 # ---------------------------------------
 #             php model

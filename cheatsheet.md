@@ -56,6 +56,7 @@
 ## php snippets
 
 - `func`        :  basic function
+- `furcr`        :  simple return function
 - `mdl`        :  basic model
 - `fr`        :  foreach
 - `trans`        :  transaction
