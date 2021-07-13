@@ -17,12 +17,24 @@
 - `:UltiSnipsEdit`  :  create the base of snippets file
 - `<C-j>`  :  next (UltiSnips)
 - `<C-k>`  :  before (UltiSnips)
+- `<C-a>`  :  show nerdtree
 
 
 ## ale linter
 
 - `C-k`  :  前の警告へジャンプ
 - `C-j`  :  後ろの警告へジャンプ
+
+
+
+## fzf command
+
+- `Files` : check files
+- `Colors`  :  check colorscheme
+- `GFiles?`  :  check git status
+- `Buffers`  :  open buffers
+- `Commits`  :  git commit
+- `<C-p>`  :  search files
 
 
 ## config keymap
@@ -62,6 +74,7 @@
 ## toml snippets
 
 - `plu`        :  plugin install format (basic)
+- `cm`        :  comment for toml
 
 
 ## php snippets
