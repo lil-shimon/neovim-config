@@ -2,8 +2,8 @@
 
 My dev env: tmux + neovim + alacritty
 
-if you want to try this neovim file, feel free to clone this.
- some commands are in cheatsheet.md.
+If you want to try this neovim file, feel free to clone this.
+ Some commands are in cheatsheet.md.
  
 to open cheatsheet `:Cheat` 
  
