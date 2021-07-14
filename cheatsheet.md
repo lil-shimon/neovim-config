@@ -27,6 +27,8 @@
 - `<C-l>`  :  <Right>
 - `<C-k>`  :  <Up>
 - `<C-j>`  :  <Down>
+- `>`  :  close tag
+- `>>`  :  close tag and enter
 
 
 ## ale linter
