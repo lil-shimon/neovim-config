@@ -117,6 +117,8 @@
 - `stc`        :  call static defined
 - `route`        :  simple route for materialApp in dart (flutter)
 - `material`        :  import package:flutter/material.dart
+- `_cs`        :  constructor
+- `reqd`        :  simply use for @required
 
 
 ## scss snippets
