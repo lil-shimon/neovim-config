@@ -115,6 +115,7 @@
 - `ife`        :  if else statement
 - `elif`        :  if else else if
 - `cm`        :  comment
+- `and`        :  &__--
 
 
 ## python snippets
