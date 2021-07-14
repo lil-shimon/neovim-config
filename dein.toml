@@ -30,6 +30,13 @@ hook_add = '''
 '''
 
 # ---------------------------------------
+#                gruvbox
+# ---------------------------------------
+[[plugins]] 
+repo = "morhetz/gruvbox"
+name = "gruvbox"
+
+# ---------------------------------------
 #               背景透過
 # ---------------------------------------
 [[plugins]] 
@@ -344,7 +351,7 @@ repo = 'junegunn/fzf.vim'
 
 
 # ---------------------------------------
-#             nerdtree
+#               nerdtree
 # ---------------------------------------
 [[plugins]]
 repo = 'scrooloose/nerdtree'
@@ -358,8 +365,22 @@ hook_add = '''
 '''
 
 # ---------------------------------------
-#             nerdtree
+#               nerdtree
 # ---------------------------------------
 [[plugins]] 
 repo = "preservim/nerdtree"
+
+
+# ---------------------------------------
+#              vim-blade
+# ---------------------------------------
+[[plugins]] 
+repo = "jwalton512/vim-blade"
+hook_add = """
+let g:blade_custom_directives = ['datetime', 'javascript']
+let g:blade_custom_directives_pairs = {
+      \   'markdown': 'endmarkdown',
+      \   'cache': 'endcache',
+      \ }
+"""
 

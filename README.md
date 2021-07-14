@@ -12,6 +12,7 @@ to open cheatsheet `:Cheat`
 - aylin (favorite)
 - ayu
 - dracula
+- gruvbox
 
 ## plugin manager
 - dein
