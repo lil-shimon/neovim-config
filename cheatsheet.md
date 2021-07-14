@@ -1,7 +1,6 @@
 # Cheat Sheet
 
 ## Normal Mode
-
 - `.`  :  前回の動作を再度使う (vim-repeat)
 - `gaip   = `  : = の位置で揃える (vim-easy-align)
 - `gaip  *= `  : = の位置で揃える (vim-easy-align)
@@ -125,4 +124,10 @@
 - `imr`        :  from import
 - `cls`        :  class statement (basic)
 - `dev`        :  def statement (basic)
+
+
+## blade snippets
+
+- `ifel`        :  if elseif else
+- `push`        :  define push
 
