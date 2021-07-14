@@ -112,9 +112,11 @@
 
 - `cls`        :  dart class (basic)
 - `cm`        :  dart comment that is like ///
+- `fi`        :  define final 
 - `stt`        :  static define
 - `stc`        :  call static defined
 - `route`        :  simple route for materialApp in dart (flutter)
+- `material`        :  import package:flutter/material.dart
 
 
 ## scss snippets
