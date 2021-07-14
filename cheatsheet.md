@@ -1,23 +1,23 @@
 # Cheat Sheet
 
 ## Normal Mode
-- `.`  :  前回の動作を再度使う (vim-repeat)
-- `gaip   = `  : = の位置で揃える (vim-easy-align)
-- `gaip  *= `  : = の位置で揃える (vim-easy-align)
-- `gaip* *= `  : = の位置で揃える
 - `:call dein#install()`  :  plugin install
 - `:call dein#update()`  :  plugin update
 - `:call {plugin name}#Status()`  : check plugin install correctly 
 - `:PreviewMarkdown` : preview markdown using mdr
+- `:h UltiSnips`  :  UltiSnips (snippets) help
+- `:UltiSnipsEdit`  :  create the base of snippets file
+- `:hi`  :  show what colors are you use on vim
+- `.`  :  前回の動作を再度使う (vim-repeat)
 - `K`  :  カーソル上の文字の説明をみる
 - `space b`  :  open browser smart search by key word on cursor
 - `<leader>j`  :  auto import (React)
-- `:h UltiSnips`  :  UltiSnips (snippets) help
-- `:UltiSnipsEdit`  :  create the base of snippets file
-- `<C-j>`  :  next (UltiSnips)
-- `<C-k>`  :  before (UltiSnips)
-- `<C-a>`  :  show nerdtree
-- `:hi`  :  show what colors are you use on vim
+- `<C-w>left`  :  resize window
+- `<C-w>right`  :  resize window
+- `<C-w>up`  :  resize window
+- `<C-w>down`  :  resize window
+- `ss`  :  split window (horizontal)
+- `sv`  :  split window (vertical)
 
 
 ## Insert Mode 
@@ -29,6 +29,16 @@
 - `<C-j>`  :  Down
 - `>`  :  close tag
 - `>>`  :  close tag and enter
+- `<C-j>`  :  next (UltiSnips)
+- `<C-k>`  :  before (UltiSnips)
+- `<C-a>`  :  show nerdtree
+
+
+## Visual Mode
+- `.`  :  前回の動作を再度使う (vim-repeat)
+- `gaip   = `  : = の位置で揃える (vim-easy-align)
+- `gaip  *= `  : = の位置で揃える (vim-easy-align)
+- `gaip* *= `  : = の位置で揃える
 
 
 ## ale linter
