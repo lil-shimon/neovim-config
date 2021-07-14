@@ -104,6 +104,14 @@ repo = 'tobyS/vmustache'
 repo = 'altercation/vim-colors-solarized'
 
 
+# ---------------------------------------
+#         colorscheme Zenburn
+# ---------------------------------------
+[[plugins]] 
+repo = "jnurmine/Zenburn"
+name = "zenburn"
+
+
 # -----------------------------------------
 #            Fugitive Settings
 # -----------------------------------------

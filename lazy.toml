@@ -45,3 +45,5 @@ hook_add = '''
 [[plugins]]
 repo = 'maxmellon/vim-jsx-pretty'
 on_ft = ['javascript', 'javascript.jsx']
+
+

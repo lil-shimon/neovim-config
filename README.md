@@ -13,6 +13,8 @@ to open cheatsheet `:Cheat`
 - ayu
 - dracula
 - gruvbox
+- papercolor
+- zenburn
 
 ## plugin manager
 - dein
