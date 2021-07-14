@@ -30,4 +30,7 @@ Some commands are in cheatsheet.md.
 - Laravel
 - Python
 - Scss
+- Blade
+- Toml
+- Markdown
 
