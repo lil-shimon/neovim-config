@@ -30,11 +30,18 @@ hook_add = '''
 '''
 
 # ---------------------------------------
-#                gruvbox
+#         colorscheme  gruvbox
 # ---------------------------------------
 [[plugins]] 
 repo = "morhetz/gruvbox"
 name = "gruvbox"
+
+# ---------------------------------------
+#        NLKNguyen/papercolor-theme
+# ---------------------------------------
+[[plugins]] 
+repo = "NLKNguyen/papercolor-theme"
+name = "papercolor-theme"
 
 # ---------------------------------------
 #               背景透過

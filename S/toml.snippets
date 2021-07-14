@@ -15,3 +15,15 @@ snippet cm "toml comment" b
 # ---------------------------------------
 endsnippet
 
+
+# ---------------------------------------
+#       install format with hook
+# ---------------------------------------
+snippet plh "Description" b
+[[plugins]] 
+repo = "$1"
+hook_add = """
+  $2
+"""
+endsnippet
+

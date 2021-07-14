@@ -151,7 +151,7 @@ filetype on
 " tab setting
 set expandtab                                                   " tabを複数のspaceに置き換え
 set tabstop=2                                                   " tabは半角2文字
-set shiftwidth=4                                                " tabの幅
+set shiftwidth=2                                                " tabの幅
 set autoindent
 set smartindent
 
