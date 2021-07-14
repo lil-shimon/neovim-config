@@ -23,10 +23,10 @@
 ## Insert Mode 
 
 - `<C-d>`  :  BS
-- `<C-h>`  :  <Left>
-- `<C-l>`  :  <Right>
-- `<C-k>`  :  <Up>
-- `<C-j>`  :  <Down>
+- `<C-h>`  :  Left
+- `<C-l>`  :  Right
+- `<C-k>`  :  Up
+- `<C-j>`  :  Down
 - `>`  :  close tag
 - `>>`  :  close tag and enter
 
@@ -40,17 +40,12 @@
 
 ## coc
 
-- `CocCommend flutter.run`  :  run flutter run
+- `CocCommend flutter.run`  :  run flutter runJ
 
 
 ## fzf command
 
-- `Files` : check files
-- `Colors`  :  check colorscheme
-- `GFiles?`  :  check git status
-- `Buffers`  :  open buffers
-- `Commits`  :  git commit
-- `<C-p>`  :  search files
+ `<C-p>`  :  search files
 - `<leader>f`  :  search words in all files
 
 
@@ -119,6 +114,7 @@
 - `if`        :  if statement
 - `ife`        :  if else statement
 - `elif`        :  if else else if
+- `cm`        :  comment
 
 
 ## python snippets
