@@ -1,6 +1,6 @@
 # Cheat Sheet
 
-## utils
+## Normal Mode
 
 - `.`  :  前回の動作を再度使う (vim-repeat)
 - `gaip   = `  : = の位置で揃える (vim-easy-align)
@@ -19,6 +19,15 @@
 - `<C-k>`  :  before (UltiSnips)
 - `<C-a>`  :  show nerdtree
 - `:hi`  :  show what colors are you use on vim
+
+
+## Insert Mode 
+
+- `<C-d>`  :  BS
+- `<C-h>`  :  <Left>
+- `<C-l>`  :  <Right>
+- `<C-k>`  :  <Up>
+- `<C-j>`  :  <Down>
 
 
 ## ale linter
