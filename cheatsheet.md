@@ -127,6 +127,7 @@
 
 ## blade snippets
 
+- `if`        :  if else
 - `ifel`        :  if elseif else
 - `push`        :  define push
 
