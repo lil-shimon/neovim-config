@@ -3,11 +3,10 @@
 My dev env: tmux + neovim + alacritty
 
 If you want to try this neovim file, feel free to clone this.
- Some commands are in cheatsheet.md.
+Some commands are in cheatsheet.md.
  
-to open cheatsheet `:Cheat` 
-[CHEATSHEET](https://github.com/lil-shimon/neovim-config/blob/master/cheatsheet.md)
- ---
+> command list: [cheatsheet.md](https://github.com/lil-shimon/neovim-config/blob/master/cheatsheet.md)
+
 
 ## colorscheme
 - aylin (favorite)
