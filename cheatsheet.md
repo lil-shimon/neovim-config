@@ -127,6 +127,8 @@
 - `material`        :  import package:flutter/material.dart
 - `_cs`        :  constructor
 - `reqd`        :  simply use for @required
+- `named`        :  Navigator.pushNamed
+- `press`        :  onPressed
 
 
 ## scss snippets
