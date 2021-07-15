@@ -98,6 +98,7 @@
 - `ue`        :  useState
 - `handler`        :  handler (w/ return)
 - `setarr`        :  setState for array
+- `sw`        :  switch 
 
 
 ## toml snippets
