@@ -31,7 +31,6 @@
 - `>>`  :  close tag and enter
 - `<C-j>`  :  next (UltiSnips)
 - `<C-k>`  :  before (UltiSnips)
-- `<C-a>`  :  show nerdtree
 
 
 ## Visual Mode
@@ -58,6 +57,14 @@
  `<C-p>`  :  search files
 - `<leader>f`  :  search words in all files
 
+
+## nerdtree command
+
+- `<C-a>`  :  show nerdtree
+- `m`  :  dir actions
+- `m + a`  :  add file or directory
+- `m + d`  :  delete file
+- `m + m`  :  move file
 
 ## config keymap
 
