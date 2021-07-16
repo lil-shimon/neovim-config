@@ -434,3 +434,11 @@ name="cyberpunk"
 repo = "Shadorain/shadotheme"
 name = "shadotheme"
 
+
+# ---------------------------------------
+#             ulwlu/abyss.vim
+# ---------------------------------------
+[[plugins]] 
+repo = "ulwlu/abyss.vim"
+name = "abyss"
+
