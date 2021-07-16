@@ -418,3 +418,19 @@ let g:closetag_regions = {
     \ }
 """
 
+
+# ---------------------------------------
+#             vim-cyberpunk
+# ---------------------------------------
+[[plugins]] 
+repo = "thedenisnikulin/vim-cyberpunk"
+name="cyberpunk"
+
+
+# ---------------------------------------
+#             shadotheme
+# ---------------------------------------
+[[plugins]] 
+repo = "Shadorain/shadotheme"
+name = "shadotheme"
+
