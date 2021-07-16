@@ -21,7 +21,7 @@ name = 'aylin'
 hook_add = '''
   autocmd ColorScheme * highlight CursorColumn ctermbg=1 guibg=#fd98b9
   autocmd ColorScheme * highlight CursorLine ctermbg=1 guibg=#99c6f1
-  colorscheme aylin
+  autocmd ColorScheme * highlight Comment ctermfg=220 guisp=#c9083f
   highlight Normal ctermbg=none guibg=NONE
   highlight NonText ctermbg=none guibg=NONE
   highlight LineNr ctermbg=none guibg=NONE
@@ -433,6 +433,12 @@ name="cyberpunk"
 [[plugins]] 
 repo = "Shadorain/shadotheme"
 name = "shadotheme"
+hook_add = """"
+ autocmd ColorScheme * highlight Comment ctermfg=220 guisp=#c9083f
+ colorscheme xshado
+"""
+
+
 
 
 # ---------------------------------------
