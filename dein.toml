@@ -439,12 +439,18 @@ hook_add = """"
 """
 
 
-
-
 # ---------------------------------------
-#             ulwlu/abyss.vim
+#           ulwlu/abyss.vim
 # ---------------------------------------
 [[plugins]] 
 repo = "ulwlu/abyss.vim"
 name = "abyss"
+
+
+# ---------------------------------------
+#        bignimbus/pop-punk.vim
+# ---------------------------------------
+[[plugins]] 
+repo = "bignimbus/pop-punk.vim"
+name = "pop-punk"
 

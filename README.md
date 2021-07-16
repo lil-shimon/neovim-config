@@ -15,6 +15,9 @@ Some commands are in cheatsheet.md.
 - gruvbox
 - papercolor
 - zenburn
+- abyss
+- pop-ponk
+- xshado
 
 ---
 
