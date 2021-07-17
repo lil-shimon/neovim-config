@@ -3,9 +3,7 @@
 # ---------------------------------------
 [[plugins]]                                    
 repo = 'Shougo/dein.vim'
-
-# ---------------------------------------
-#            colorscheme ayu
+# --------------------------------------- colorscheme ayu
 # ---------------------------------------
 [[plugins]]
 repo = 'ayu-theme/ayu-vim'
@@ -453,4 +451,5 @@ name = "abyss"
 [[plugins]] 
 repo = "bignimbus/pop-punk.vim"
 name = "pop-punk"
+
 
