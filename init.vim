@@ -284,3 +284,15 @@ let s:toml_dir = expand('~/.config/nvim')
 
   let g:dein#auto_recache = 1
 
+
+" vim-plug
+if has('nvim')
+  let g:plughome = stdpath("data").'plugged'
+endif
+
+call plug#begin()
+
+Plug 'neovim/nvim-lspconfig'
+
+call plug#end()
+

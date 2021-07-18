@@ -78,6 +78,11 @@
 - `C-w`          :  exit terminal mode
 
 
+## vim-plug commands
+
+- `PlugInstall`    :  install plugin
+
+
 ## React snippets
 
 - `clg`        :  console.log
