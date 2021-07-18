@@ -21,7 +21,7 @@ end
 nvim_lsp.tsserver.setup {
 
   on_attach = on_attach,
-  filetype = {'typescript', 'typescriptreact', 'typescript.tsx'}
+  filetype = {'typescript', 'typescriptreact', 'typescript.tsx', 'javascript', 'javascriptreact', 'javascript.jsx'}
 
 }
 
