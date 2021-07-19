@@ -227,13 +227,6 @@ repo = 'Shougo/deoppet.nvim'
 repo = "Shougo/neocomplete.vim"
 
 [[plugins]]
-repo = 'itchyny/lightline.vim'
-
-[[plugins]]
-repo = 'maximbaz/lightline-ale'
-depends  = ['lightline.vim', 'ale']
-
-[[plugins]]
 repo = 'dart-lang/dart-vim-plugin'
 
 [[plugins]]
