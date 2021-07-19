@@ -7,6 +7,13 @@ Some commands are in cheatsheet.md.
  
 > command list: [cheatsheet.md](https://github.com/lil-shimon/neovim-config/blob/master/cheatsheet.md)
 
+---
+## requirement
+- npm (to install tsserver, intelephense)
+- dein
+- typescript 
+- tsserver 
+- intelephense
 
 ## colorscheme
 - aylin (favorite)
@@ -22,7 +29,8 @@ Some commands are in cheatsheet.md.
 ---
 
 ## plugin manager
-- dein
+- dein (for nvim 0.4.4)
+- vim-plug (for nvim 0.5)
 
 ---
 
