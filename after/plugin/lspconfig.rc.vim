@@ -6,7 +6,7 @@ lua << EOF
 
 local nvim_lsp = require('lspconfig')
 local protocol = require('vim.lsp.protocol')
-
+lsp
 local on_attach = function(client, bufnr)
   
   local function buf_set_keymap(...) vim.api.buf_set_keymap(bufnr, ...)end
@@ -64,6 +64,7 @@ nvim_lsp.tsserver.setup {
 }
 
 nvim_lsp.phpactor.setup {}
+nvim_lsp.pyright.setup{}
 
 nvim_lsp.intelephense.setup {
   }

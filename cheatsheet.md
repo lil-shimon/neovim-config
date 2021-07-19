@@ -171,3 +171,11 @@
 - `ifel`        :  if elseif else
 - `push`        :  define push
 
+
+---
+
+
+## fish keymap
+
+- `<C-R>` : peco ( search history )
+
