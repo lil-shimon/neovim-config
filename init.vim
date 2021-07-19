@@ -1,8 +1,8 @@
 cnoremap init :<C-u>edit $MYVIMRC<CR>                           " init.vim呼び出し
-noremap <Space>s :source $MYVIMRC<CR>                           " init.vim読み込み
-noremap <Space>w :<C-u>w<CR>                                    " ファイル保存
+noremap <Space>s :source $MYVIMRC<CR>                           " init.vim読み込み noremap <Space>w :<C-u>w<CR>                                    " ファイル保存
 
 set shell=fish
+set completeopt=menuone,noinsert,noselect
 
 "-----------------------------------------
 "              Linter (ale)
@@ -140,7 +140,7 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 nnoremap <Leader>. :new ~/.config/nvim/init.vim<CR>
 
 "search files (fzf)
-nmap <C-P> :FZF<CR>
+nmap ;f :FZF<CR>
 nmap <Leader>f :Ag<CR>
 
 
@@ -251,6 +251,12 @@ nnoremap <silent><C-f> :<C-u>Defx<CR>
   nmap <Leader>b <Plug>(openbrowser-smart-search)
   vmap <Leader>b <Plug>(openbrowser-smart-search)
 
+" telescope  
+nnoremap <silent> <C-P> <cmd>Telescope find_files<cr>
+nnoremap <silent> <C-L> <cmd>Telescope live_grep<cr>
+nnoremap <silent> \\ <cmd>Telescope buffers<cr>
+nnoremap <silent> ;; <cmd>Telescope help_tags<cr>
+
 if &compatible    
   set nocompatible               " Be iMproved    
 endif  
@@ -296,6 +302,11 @@ call plug#begin()
 
 Plug 'neovim/nvim-lspconfig',
 Plug 'glepnir/lspsaga.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-lua/completion-nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 

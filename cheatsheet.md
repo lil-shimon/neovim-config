@@ -21,6 +21,11 @@
 - `<silent>K`  :  display (hover_doc) diagnostic (lsp-saga)
 - `<silent><C-j>`  : jump diagnostic (lsp-saga)
 - `<silent>gh`  : display the cursor word's references and definitions. to exit, press q
+- `:TSInstallInfo`  : get a list of all available languages and their installation status (TreeSitter)
+- `<silent> <C-P>` : Telescope discover files
+- `<silent> <C-L>` : Telescope grep
+- `<silent> \\` : Telescope buffers
+- `<silent> ;;` : Telescope help
 
 
 ## Insert Mode 
