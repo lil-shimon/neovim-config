@@ -50,6 +50,9 @@
 ## coc
 
 - `CocCommend flutter.run`  :  run flutter runJ
+- `CocList`  :  open coc list
+- `CocExtension`  :  open coc extension settings
+- `CocUninstall [plug name]`  :  remove extension
 
 
 ## fzf command

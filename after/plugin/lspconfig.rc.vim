@@ -25,5 +25,7 @@ nvim_lsp.tsserver.setup {
 
 }
 
+nvim_lsp.phpactor.setup {}
+
 EOF
 
