@@ -27,5 +27,8 @@ nvim_lsp.tsserver.setup {
 
 nvim_lsp.phpactor.setup {}
 
+nvim_lsp.intelephense.setup {
+  }
+
 EOF
 
