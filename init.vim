@@ -2,6 +2,8 @@ cnoremap init :<C-u>edit $MYVIMRC<CR>                           " init.vim呼び
 noremap <Space>s :source $MYVIMRC<CR>                           " init.vim読み込み
 noremap <Space>w :<C-u>w<CR>                                    " ファイル保存
 
+set shell fish
+
 "-----------------------------------------
 "              Linter (ale)
 "-----------------------------------------
@@ -292,7 +294,11 @@ endif
 
 call plug#begin()
 
-Plug 'neovim/nvim-lspconfig'
+Plug 'neovim/nvim-lspconfig',
+Plug 'glepnir/lspsaga.nvim'
 
 call plug#end()
+
+" show hover doc
+nnoremap <silent>K :Lspsaga hover_doc<CR>
 

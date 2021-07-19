@@ -6,6 +6,7 @@ lua << EOF
 
 local nvim_lsp = require('lspconfig')
 local protocol = require('vim.lsp.protocol')
+local saga = require('lspsaga')
 
 local on_attach = function(client, bufnr)
   
@@ -30,5 +31,12 @@ nvim_lsp.phpactor.setup {}
 nvim_lsp.intelephense.setup {
   }
 
+saga.init_lsp_saga {
+  error_sign = '?',
+  warn_sign = '?',
+  hint_sign = '?',
+  infor_sign = '?',
+  border_style = "round",
+}
 EOF
 
