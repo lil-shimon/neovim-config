@@ -2,7 +2,7 @@ cnoremap init :<C-u>edit $MYVIMRC<CR>                           " init.vim呼び
 noremap <Space>s :source $MYVIMRC<CR>                           " init.vim読み込み
 noremap <Space>w :<C-u>w<CR>                                    " ファイル保存
 
-set shell fish
+set shell=fish
 
 "-----------------------------------------
 "              Linter (ale)
