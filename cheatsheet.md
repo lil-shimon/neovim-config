@@ -20,6 +20,7 @@
 - `sv`  :  split window (vertical)
 - `<silent>K`  :  display (hover_doc) diagnostic (lsp-saga)
 - `<silent><C-j>`  : jump diagnostic (lsp-saga)
+- `<silent>gh`  : display the cursor word's references and definitions. to exit, press q
 
 
 ## Insert Mode 
