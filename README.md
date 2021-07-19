@@ -8,12 +8,14 @@ Some commands are in cheatsheet.md.
 > command list: [cheatsheet.md](https://github.com/lil-shimon/neovim-config/blob/master/cheatsheet.md)
 
 ---
-## requirement
+## requirements
 - npm (to install tsserver, intelephense)
 - dein
 - typescript 
 - tsserver 
 - intelephense
+
+---
 
 ## colorscheme
 - aylin (favorite)
