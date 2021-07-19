@@ -19,6 +19,7 @@
 - `ss`  :  split window (horizontal)
 - `sv`  :  split window (vertical)
 - `<silent>K`  :  display (hover_doc) diagnostic (lsp-saga)
+- `<silent><C-j>`  : jump diagnostic (lsp-saga)
 
 
 ## Insert Mode 
