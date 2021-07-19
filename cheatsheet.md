@@ -18,6 +18,7 @@
 - `<C-w>down`  :  resize window
 - `ss`  :  split window (horizontal)
 - `sv`  :  split window (vertical)
+- `<silent>K`  :  display (hover_doc) diagnostic (lsp-saga)
 
 
 ## Insert Mode 
