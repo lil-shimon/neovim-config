@@ -1,4 +1,4 @@
-ocal luasnip = require('luasnip')
+local luasnip = require('luasnip')
 
 -- some shorthands...
 local s = luasnip.snippet
