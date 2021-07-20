@@ -2,7 +2,10 @@
 #              dark power
 # ---------------------------------------
 [[plugins]]                                    
-repo = 'Shougo/dein.vim' # --------------------------------------- colorscheme ayu ---------------------------------------
+repo = 'Shougo/dein.vim' 
+
+
+# --------------------------------------- colorscheme ayu ---------------------------------------
 [[plugins]]
 repo = 'ayu-theme/ayu-vim'
 name = 'ayu'

@@ -7,8 +7,7 @@ set completeopt=menuone,noinsert,noselect
 "-----------------------------------------
 "              Linter (ale)
 "-----------------------------------------
-" C-k -> 前の警告へジャンプ
-" C-j -> 後ろの警告へジャンプ
+" C-k -> 前の警告へジャンプ C-j -> 後ろの警告へジャンプ
 "
 let b:ale_linters = {
 \   'javascript': ['eslint', 'eslint-plugin-vue'],
@@ -156,6 +155,8 @@ set tabstop=2                                                   " tabは半角2�
 set shiftwidth=2                                                " tabの幅
 set autoindent
 set smartindent
+g:indent_blankline_char_highlight_list
+let g:indent_blankline_use_treesitter = v:true
 
 "Split window
 nmap ss :split<Return><C-w>w
@@ -178,84 +179,9 @@ nmap <C-w><right> <C-w>>
 nmap <C-w><up> <C-w>+
 nmap <C-w><down> <C-w>-
 
-" Defx setting
-nnoremap <silent><C-f> :<C-u>Defx<CR>
-
-	autocmd FileType defx call s:defx_my_settings()
-	function! s:defx_my_settings() abort
-	  " Define mappings
-	  nnoremap <silent><buffer><expr> <CR>
-	  \ defx#do_action('open')
-	  nnoremap <silent><buffer><expr> c
-	  \ defx#do_action('copy')
-	  nnoremap <silent><buffer><expr> m
-	  \ defx#do_action('move')
-	  nnoremap <silent><buffer><expr> p
-	  \ defx#do_action('paste')
-	  nnoremap <silent><buffer><expr> l
-	  \ defx#do_action('open')
-	  nnoremap <silent><buffer><expr> E
-	  \ defx#do_action('open', 'vsplit')
-	  nnoremap <silent><buffer><expr> P
-	  \ defx#do_action('preview')
-	  nnoremap <silent><buffer><expr> o
-	  \ defx#do_action('open_tree', 'toggle')
-	  nnoremap <silent><buffer><expr> K
-	  \ defx#do_action('new_directory')
-	  nnoremap <silent><buffer><expr> N
-	  \ defx#do_action('new_file')
-	  nnoremap <silent><buffer><expr> M
-	  \ defx#do_action('new_multiple_files')
-	  nnoremap <silent><buffer><expr> C
-	  \ defx#do_action('toggle_columns',
-	  \                'mark:indent:icon:filename:type:size:time')
-	  nnoremap <silent><buffer><expr> S
-	  \ defx#do_action('toggle_sort', 'time')
-	  nnoremap <silent><buffer><expr> d
-	  \ defx#do_action('remove')
-	  nnoremap <silent><buffer><expr> r
-	  \ defx#do_action('rename')
-	  nnoremap <silent><buffer><expr> !
-	  \ defx#do_action('execute_command')
-	  nnoremap <silent><buffer><expr> x
-	  \ defx#do_action('execute_system')
-	  nnoremap <silent><buffer><expr> yy
-	  \ defx#do_action('yank_path')
-	  nnoremap <silent><buffer><expr> .
-	  \ defx#do_action('toggle_ignored_files')
-	  nnoremap <silent><buffer><expr> ;
-	  \ defx#do_action('repeat')
-	  nnoremap <silent><buffer><expr> h
-	  \ defx#do_action('cd', ['..'])
-	  nnoremap <silent><buffer><expr> ~
-	  \ defx#do_action('cd')
-	  nnoremap <silent><buffer><expr> q
-	  \ defx#do_action('quit')
-	  nnoremap <silent><buffer><expr> <Space>
-	  \ defx#do_action('toggle_select') . 'j'
-	  nnoremap <silent><buffer><expr> *
-	  \ defx#do_action('toggle_select_all')
-	  nnoremap <silent><buffer><expr> j
-	  \ line('.') == line('$') ? 'gg' : 'j'
-	  nnoremap <silent><buffer><expr> k
-	  \ line('.') == 1 ? 'G' : 'k'
-	  nnoremap <silent><buffer><expr> <C-l>
-	  \ defx#do_action('redraw')
-	  nnoremap <silent><buffer><expr> <C-g>
-	  \ defx#do_action('print')
-	  nnoremap <silent><buffer><expr> cd
-	  \ defx#do_action('change_vim_cwd')
-	endfunction
-
   "open-browser
   nmap <Leader>b <Plug>(openbrowser-smart-search)
   vmap <Leader>b <Plug>(openbrowser-smart-search)
-
-" telescope  
-nnoremap <silent> <C-P> <cmd>Telescope find_files<cr>
-nnoremap <silent> <C-L> <cmd>Telescope live_grep<cr>
-nnoremap <silent> \\ <cmd>Telescope buffers<cr>
-nnoremap <silent> ;; <cmd>Telescope help_tags<cr>
 
 if &compatible    
   set nocompatible               " Be iMproved    
@@ -300,19 +226,69 @@ endif
 
 call plug#begin()
 
+"  ---------------------------------------
+"                lspconfig 
+"  ---------------------------------------
 Plug 'neovim/nvim-lspconfig',
+
+
+"  ---------------------------------------
+"                lspsaga 
+"  ---------------------------------------
 Plug 'glepnir/lspsaga.nvim'
+" show hover doc
+nnoremap <silent>K :Lspsaga hover_doc<CR>
+
+
+"  ---------------------------------------
+"              treesitter 
+"  ---------------------------------------
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+
+"  ---------------------------------------
+"               telescope 
+"  ---------------------------------------
+Plug 'nvim-telescope/telescope.nvim'
+nnoremap <silent> <C-P> <cmd>Telescope find_files<cr>
+nnoremap <silent> <C-L> <cmd>Telescope live_grep<cr>
+nnoremap <silent> \\ <cmd>Telescope buffers<cr>
+nnoremap <silent> ;; <cmd>Telescope help_tags<cr>
+
+
+
+"  ---------------------------------------
+"                icons 
+"  ---------------------------------------
 Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
+
+
+"  ---------------------------------------
+"              status line 
+"  ---------------------------------------
+Plug 'hoob3rt/lualine.nvim'
+
+
+
+"  ---------------------------------------
+"            lua snip (future) 
+"  ---------------------------------------
+Plug 'L3MON4D3/LuaSnip/'
+
+imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
+inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>
+
+snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>
+snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
+
+imap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
+smap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
+
+
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'hoob3rt/lualine.nvim'
 
 call plug#end()
-
-" show hover doc
-nnoremap <silent>K :Lspsaga hover_doc<CR>
 
