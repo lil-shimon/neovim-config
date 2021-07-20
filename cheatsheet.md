@@ -130,6 +130,9 @@
 - `mdl`        :  basic model
 - `fr`        :  foreach
 - `trans`        :  transaction
+- `class`        :  simple class temp
+- `routefunc`        :  simple route func temp
+- `route`        :  simple route temp
 
 
 ## dart snippets
