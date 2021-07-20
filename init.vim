@@ -1,5 +1,6 @@
-cnoremap init :<C-u>edit $MYVIMRC<CR>                           " init.vim呼び出し
-noremap <Space>s :source $MYVIMRC<CR>                           " init.vim読み込み noremap <Space>w :<C-u>w<CR>                                    " ファイル保存
+cnoremap init :<C-u>edit $MYVIMRC<CR>                           
+noremap <Space>s :source $MYVIMRC<CR>                          
+noremap <Space>w :<C-u>w<CR>                                    
 
 set shell=fish
 set completeopt=menuone,noinsert,noselect
@@ -129,13 +130,9 @@ set laststatus=2
 
 "keymap
 let g:mapleader = "\<Space>"
-" space and w => file save 
 nnoremap <Leader>w :w<CR> 
-" space and q => exit file
 nnoremap <Leader>q :q<CR> 
-"click esc twise => delete highlight of result of search"
 nnoremap <ESC><ESC> :nohlsearch<CR> 
-"space and . => open init.vim
 nnoremap <Leader>. :new ~/.config/nvim/init.vim<CR>
 
 "search files (fzf)
@@ -149,15 +146,10 @@ set cursorline                                                  " カーソル�
 set cursorcolumn
 filetype on
 
-" tab setting
-set expandtab                                                   " tabを複数のspaceに置き換え
-set tabstop=2                                                   " tabは半角2文字
-set shiftwidth=2                                                " tabの幅
-set autoindent
-set smartindent
-g:indent_blankline_char_highlight_list
-let g:indent_blankline_use_treesitter = v:true
 
+" ---------------------------------------
+"           window settings 
+" ---------------------------------------
 "Split window
 nmap ss :split<Return><C-w>w
 nmap sv :vsplit<Return><C-w>w
@@ -179,47 +171,73 @@ nmap <C-w><right> <C-w>>
 nmap <C-w><up> <C-w>+
 nmap <C-w><down> <C-w>-
 
-  "open-browser
-  nmap <Leader>b <Plug>(openbrowser-smart-search)
-  vmap <Leader>b <Plug>(openbrowser-smart-search)
+
+" ---------------------------------------
+"        vim to browser settings 
+" ---------------------------------------
+
+"open-browser
+nmap <Leader>b <Plug>(openbrowser-smart-search)
+vmap <Leader>b <Plug>(openbrowser-smart-search)
+
+
+" ---------------------------------------
+"           indent settings 
+" ---------------------------------------  
+
+" tab setting
+set expandtab                                                   
+set tabstop=2                                                   
+set shiftwidth=2                                                
+set autoindent
+set smartindent
+
+augroup vimrc-filetype
+  autocmd!
+ " ---------------------------------------
+ "           php indent settings 
+ " ---------------------------------------
+  autocmd BufNewFile,BufRead *.php set filetype=php
+  autocmd FileType php setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
+
+augroup END
 
 if &compatible    
   set nocompatible               " Be iMproved    
 endif  
 
+
+
+" ---------------------------------------
+"           dein settings 
+" ---------------------------------------
 " Required:
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 
 let s:dein_dir = expand('~/.cache/dein')
- " dein.vimのパス    
 let s:dein_repo_dir = s:dein_dir .  '/repos/github.com/Shougo/dein.vim'    
-
- " tomlのディレクトリへのパス    
 let s:toml_dir = expand('~/.config/nvim')    
 
- if dein#load_state(s:dein_dir)    
-   call dein#begin(s:dein_dir)    
+if dein#load_state(s:dein_dir)    
+ call dein#begin(s:dein_dir)    
+ call dein#load_toml(s:toml_dir . '/dein.toml', {'lazy': 0})
+ call dein#load_toml(s:toml_dir . '/lazy.toml', {'lazy': 1})
+ call dein#end()           
+ call dein#save_state()    
+endif                        
 
- " 起動時に読み込むプラグイン群のtoml    
-  call dein#load_toml(s:toml_dir . '/dein.toml', {'lazy': 0})
+if dein#check_install()                                       
+  call dein#install()      
+endif     
 
- " 利用時に読み込むプラグインのtoml
-  call dein#load_toml(s:toml_dir . '/lazy.toml', {'lazy': 1})
-
-  call dein#end()           
-
-  call dein#save_state()    
- endif                        
-
-  if dein#check_install()                                       
-    call dein#install()      
-  endif     
-
-  let g:dein#auto_recache = 1
+let g:dein#auto_recache = 1
 
 
-" vim-plug
+
+ " ---------------------------------------
+ "               vim plug 
+ " ---------------------------------------
 if has('nvim')
   let g:plughome = stdpath("data").'plugged'
 endif
