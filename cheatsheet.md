@@ -134,6 +134,7 @@
 - `class`        :  simple class temp
 - `routefunc`        :  simple route func temp
 - `route`        :  simple route temp
+- `pri`        :  private variable declaration
 
 
 ## dart snippets
