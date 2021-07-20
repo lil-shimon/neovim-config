@@ -24,7 +24,15 @@ formatter.setup({
          }
        end
     },
-
+    php = {
+      -- phpcsfixer
+      function()
+         return {
+           exe = "php-cs-fixer fix .",
+           stdin = true
+         }
+       end
+    },
     rust = {
       -- Rustfmt
       function()

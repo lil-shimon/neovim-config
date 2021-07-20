@@ -200,12 +200,10 @@ augroup vimrc-filetype
   autocmd BufNewFile,BufRead *.php set filetype=php
   autocmd FileType php setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
 
-augroup END
 
 if &compatible    
   set nocompatible               " Be iMproved    
 endif  
-
 
 
 " ---------------------------------------
@@ -311,6 +309,22 @@ Plug 'nvim-lua/plenary.nvim'
 "           formatter 
 " ---------------------------------------
 Plug 'mhartington/formatter.nvim'
+
+" ---------------------------------------
+"           php-cs-fixer 
+"         (delete in future)
+" ---------------------------------------
+Plug 'aeke/vim-php-cs-fixer'
+" If php-cs-fixer is in $PATH, you don't need to define line below
+let g:php_cs_fixer_path = "~/.php_cs"
+
+let g:php_cs_fixer_php_path = "php"               " Path to PHP
+let g:php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
+let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
+let g:php_cs_fixer_verbose = 0
+nnoremap <silent><leader>pcd :call PhpCsFixerFixDirectory()<CR>
+nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
+
 
 call plug#end()
 
