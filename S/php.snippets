@@ -99,7 +99,7 @@ endsnippet
 # ---------------------------------------
 snippet join "eloquent join" b
 ->join('${1:join_table_name}', '${2:key_column}', '${3:=}', ${4:join_table_key_column})
-${5:get();}
+${5}
 endsnippet
 
 
@@ -108,7 +108,7 @@ endsnippet
 # ---------------------------------------
 snippet where "simple where" b
 ->where('${1:column_name}', ${2})
-${3:get();}
+${3}
 endsnippet
 
 
@@ -117,7 +117,7 @@ endsnippet
 # ---------------------------------------
 snippet select "simple select" b
 ->select('${1:table_name.*}', '${2:others what you wanna pick}')
-${3:get();}
+${3}
 endsnippet
 
 
@@ -127,5 +127,21 @@ endsnippet
 snippet wherejsoncontains "wherejsoncontains" b
 ->whereJsonContains('${1:column}', ${2})
 ${3}
+endsnippet
+
+
+# ---------------------------------------
+#             isEmpty method
+# ---------------------------------------
+snippet empty "isEmpty method" b
+$${1:collectionName}->isEmpty()
+endsnippet
+
+
+# ---------------------------------------
+#          isNotEmpty method
+# ---------------------------------------
+snippet notempty "isNotEmpty method" b
+$${1:collectionName}->isNotEmpty()
 endsnippet
 

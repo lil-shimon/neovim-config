@@ -124,7 +124,7 @@
 - `cm`        :  comment for toml
 
 
-## php snippets
+## php (laravel) snippets
 
 - `func`        :  basic function
 - `furcr`        :  simple return function
@@ -138,6 +138,8 @@
 - `join`        :  join
 - `where`        :  simple where
 - `wherejsoncontains` : whereJsonContains
+- `empty` : isEmpty method
+- `notempty` : isNotEmpty method
 
 
 ## dart snippets
