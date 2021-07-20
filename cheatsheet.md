@@ -135,6 +135,9 @@
 - `routefunc`        :  simple route func temp
 - `route`        :  simple route temp
 - `pri`        :  private variable declaration
+- `join`        :  join
+- `where`        :  simple where
+- `wherejsoncontains` : whereJsonContains
 
 
 ## dart snippets

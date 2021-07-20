@@ -93,3 +93,39 @@ snippet pri "private variable" b
 private $${1};
 endsnippet
 
+
+# ---------------------------------------
+#             eloquent join
+# ---------------------------------------
+snippet join "eloquent join" b
+->join('${1:join_table_name}', '${2:key_column}', '${3:=}', ${4:join_table_key_column})
+${5:get();}
+endsnippet
+
+
+# ---------------------------------------
+#             simple where
+# ---------------------------------------
+snippet where "simple where" b
+->where('${1:column_name}', ${2})
+${3:get();}
+endsnippet
+
+
+# ---------------------------------------
+#             simple select
+# ---------------------------------------
+snippet select "simple select" b
+->select('${1:table_name.*}', '${2:others what you wanna pick}')
+${3:get();}
+endsnippet
+
+
+# ---------------------------------------
+#             whereJsonContains
+# ---------------------------------------
+snippet wherejsoncontains "wherejsoncontains" b
+->whereJsonContains('${1:column}', ${2})
+${3}
+endsnippet
+
