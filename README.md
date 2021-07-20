@@ -79,6 +79,7 @@ Some commands are in cheatsheet.md.
 - Shadorain/shadotheme
 - ulwlu/abyss.vim
 - bignimbus/pop-punk.vim
+- mhartington/formatter.nvim
 
 
 ---

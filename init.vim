@@ -137,7 +137,7 @@ nnoremap <Leader>. :new ~/.config/nvim/init.vim<CR>
 
 "search files (fzf)
 nmap ;f :FZF<CR>
-nmap <Leader>f :Ag<CR>
+nmap <Leader>ag :Ag<CR>
 
 
 "cursorl setting
@@ -255,7 +255,6 @@ Plug 'neovim/nvim-lspconfig',
 "  ---------------------------------------
 Plug 'glepnir/lspsaga.nvim'
 " show hover doc
-nnoremap <silent>K :Lspsaga hover_doc<CR>
 
 
 "  ---------------------------------------
@@ -307,6 +306,11 @@ smap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' 
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+
+" ---------------------------------------
+"           formatter 
+" ---------------------------------------
+Plug 'mhartington/formatter.nvim'
 
 call plug#end()
 

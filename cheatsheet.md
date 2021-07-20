@@ -26,6 +26,7 @@
 - `<silent> <C-L>` : Telescope grep
 - `<silent> \\` : Telescope buffers
 - `<silent> ;;` : Telescope help
+- `<leader>f` : formatter
 
 
 ## Insert Mode 
@@ -66,7 +67,7 @@
 ## fzf command
 
  `<C-p>`  :  search files
-- `<leader>f`  :  search words in all files
+- `<leader>ag`  :  search words in all files (:Ag)
 
 
 ## nerdtree command
