@@ -115,6 +115,7 @@
 - `handler`        :  handler (w/ return)
 - `setarr`        :  setState for array
 - `sw`        :  switch 
+- `cdir`        :  console.dir 
 
 
 ## toml snippets
