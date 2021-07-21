@@ -1,6 +1,6 @@
 # neovim-config
 
-**My dev env: tmux + neovim + alacritty**
+**My dev env: tmux + neovim 0.5 + alacritty**
 
 If you want to try this neovim file, feel free to clone this.
 Some commands are in cheatsheet.md.
@@ -81,6 +81,7 @@ Some commands are in cheatsheet.md.
 - bignimbus/pop-punk.vim
 - mhartington/formatter.nvim
 - wakatime/vim-wakatime
+- rafamadriz/neon  [neon](https://github.com/rafamadriz/neon)
 
 
 ---
@@ -95,6 +96,7 @@ Some commands are in cheatsheet.md.
 - abyss
 - pop-ponk
 - xshado
+- neon
 
 ---
 

@@ -1,7 +1,6 @@
 cnoremap init :<C-u>edit $MYVIMRC<CR>                           
 noremap <Space>s :source $MYVIMRC<CR>                          
 noremap <Space>w :<C-u>w<CR>                                    
-
 set shell=fish
 set completeopt=menuone,noinsert,noselect
 
@@ -331,6 +330,11 @@ nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
 "         programming stats
 " ---------------------------------------
 Plug 'wakatime/vim-wakatime'
+
+" ---------------------------------------
+"           rafamadriz/neon 
+" ---------------------------------------
+Plug 'rafamadriz/neon'
 
 call plug#end()
 
