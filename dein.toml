@@ -158,11 +158,11 @@ repo = 'tpope/vim-rhubarb'
 # -----------------------------------------
 #               ultisnips 
 # -----------------------------------------
-[[plugins]]
-repo = 'SirVer/ultisnips'
-hook_add = """
-let g:UltiSnipsSnippetDirectories="~/.config/nvim/plugins/S/"
-"""
+# [[plugins]]
+# repo = 'SirVer/ultisnips'
+# hook_add = """
+# let g:UltiSnipsSnippetDirectories="~/.config/nvim/plugins/S/"
+# """
 
 
 [[plugins]]
