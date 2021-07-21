@@ -82,6 +82,7 @@ Some commands are in cheatsheet.md.
 - mhartington/formatter.nvim
 - wakatime/vim-wakatime
 - [rafamadriz/neon](https://github.com/rafamadriz/neon)
+- [hrsh7th/nvim-compe](https://github.com/hrsh7th/nvim-compe)
 
 
 ---
