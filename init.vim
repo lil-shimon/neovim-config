@@ -2,13 +2,12 @@ cnoremap init :<C-u>edit $MYVIMRC<CR>
 noremap <Space>s :source $MYVIMRC<CR>                          
 noremap <Space>w :<C-u>w<CR>                                    
 set shell=fish
-set completeopt=menuone,noinsert,noselect
+set completeopt=menuone,noselect
 
 "-----------------------------------------
 "              Linter (ale)
 "-----------------------------------------
 " C-k -> 前の警告へジャンプ C-j -> 後ろの警告へジャンプ
-"
 let b:ale_linters = {
 \   'javascript': ['eslint', 'eslint-plugin-vue'],
 \   'python': ['pyflakes', 'pep8'],
@@ -335,6 +334,20 @@ Plug 'wakatime/vim-wakatime'
 "           rafamadriz/neon 
 " ---------------------------------------
 Plug 'rafamadriz/neon'
+
+
+" ---------------------------------------
+"     shaunsingh/moonlight.nvim 
+" ---------------------------------------
+Plug 'shaunsingh/moonlight.nvim'
+
+
+" ---------------------------------------
+"         hrsh7th/nvim-compe 
+" ---------------------------------------
+Plug 'hrsh7th/nvim-compe'
+
+
 
 call plug#end()
 
