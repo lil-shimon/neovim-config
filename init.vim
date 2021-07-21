@@ -326,5 +326,11 @@ nnoremap <silent><leader>pcd :call PhpCsFixerFixDirectory()<CR>
 nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
 
 
+" ---------------------------------------
+"           wakatime.vim 
+"         programming stats
+" ---------------------------------------
+Plug 'wakatime/vim-wakatime'
+
 call plug#end()
 

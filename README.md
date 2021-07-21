@@ -80,6 +80,7 @@ Some commands are in cheatsheet.md.
 - ulwlu/abyss.vim
 - bignimbus/pop-punk.vim
 - mhartington/formatter.nvim
+- wakatime/vim-wakatime
 
 
 ---

@@ -141,6 +141,7 @@
 - `wherejsoncontains` : whereJsonContains
 - `empty` : isEmpty method
 - `notempty` : isNotEmpty method
+- `typeof` : getType method.
 
 
 ## dart snippets
