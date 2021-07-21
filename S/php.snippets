@@ -153,3 +153,27 @@ snippet typeof "check type of value" b
 getType($${1:$value});
 endsnippet
 
+
+# ---------------------------------------
+#             date func
+# ---------------------------------------
+snippet date "date()" b
+date("Y-m-d H:i:s", ${1:date});
+endsnippet
+
+
+# ---------------------------------------
+#             date modify
+# ---------------------------------------
+snippet modify "date modify" b
+date_modify(${1:date}, '${2: +1 day}');
+endsnippet
+
+
+# ---------------------------------------
+#         string date calc
+# ---------------------------------------
+snippet datecalcstr "temp of string date calc" b
+date( "Y-m-d ${4:H:i:s}", strtotime( ${1:date}."+".${2:number}." ${3:time(e.g.second)}" )
+endsnippet
+

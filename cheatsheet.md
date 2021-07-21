@@ -142,6 +142,10 @@
 - `empty` : isEmpty method
 - `notempty` : isNotEmpty method
 - `typeof` : getType method.
+- `date` : date()
+- `modify` : date modify
+- `datecalcstr` : temp of string date calc
+
 
 
 ## dart snippets
