@@ -81,7 +81,7 @@ Some commands are in cheatsheet.md.
 - bignimbus/pop-punk.vim
 - mhartington/formatter.nvim
 - wakatime/vim-wakatime
-- rafamadriz/neon  [neon](https://github.com/rafamadriz/neon)
+- [rafamadriz/neon](https://github.com/rafamadriz/neon)
 
 
 ---
