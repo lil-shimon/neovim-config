@@ -98,6 +98,7 @@ Some commands are in cheatsheet.md.
 - pop-ponk
 - xshado
 - neon
+- moonlight
 
 ---
 
