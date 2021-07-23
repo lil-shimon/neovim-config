@@ -1,8 +1,7 @@
 -- vim.cmd [[packadd nvim-compe]]
 -- vim.cmd [[packadd vim-vsnip]]
 -- vim.cmd [[packadd vim-vsnip-integ]]
---
-local protocol = require "vim.lsp.protocol"
+-- local protocol = require "vim.lsp.protocol"
 local map = require "settings.utils".map
 
 vim.o.completeopt = "menuone,noselect"
@@ -24,17 +23,10 @@ require "compe".setup {
   source = {
     path = {menu = " ", priority = 500},
     buffer = {menu = " ", priority = 500},
-    vsnip = {menu = " ", priority = 1000},
-    nvim_lsp = {menu = " ", priority = 500}
-    -- treesitter = {menu = " ",priority = 500;},
-    -- tags = true
-    -- omni = true
-    -- calc = {menu = "  ", priority = 500},
-    -- nvim_lsp = {menu = " ", priority = 10, sort = fase},
-    -- nvim_lua = {menu = "  ", priority = 500},
-    -- spell = {menu = "  ", priority = 500},
-    -- tags = true
-    -- emoji = {menu = " ﲃ ", filetype = {"gitcommit", "markdown"}}
+    nvim_lsp = {menu = " ", priority = 500},
+    luasnip = { menu = '[SNP]', priority = 600 },
+    treesitter = {menu = " ",priority = 500;},
+    spell = {menu = "  ", priority = 500},
   }
 }
 
@@ -51,7 +43,15 @@ local check_back_space = function()
   end
 end
 
-local luasnip require "luasnip"
+local function prequire(...)
+        local status, lib = pcall(require, ...)
+        if status then
+            return lib
+        end
+        return nil
+end
+
+local luasnip prequire "luasnip"
 
 -- Use (s-)tab to:
 --- move to prev/next item in completion menuone
@@ -59,23 +59,31 @@ local luasnip require "luasnip"
 _G.tab_complete = function()
   if vim.fn.pumvisible() == 1 then
     return t "<C-n>"
-  elseif luasnip and luasnip.jumpable(-1) then
-    return t '<Plug>luasnip-jump-prev'
+  elseif luasnip.expand_or_jumpable() then
+    return t '<Plug>luasnip-expand-or-jump'
   elseif check_back_space() then
     return t "<Tab>"
   else
     return vim.fn["compe#complete"]()
   end
 end
+
 _G.s_tab_complete = function()
   if vim.fn.pumvisible() == 1 then
     return t "<C-p>"
-  elseif luasnip and luasnip.choice_active() then
-    return t '<Plug>luasnip-next-choice'
+  elseif luasnip and luasnip.jumpable(-1) then
+    return t '<Plug>luasnip-jump-prev'
   else
     return t "<S-Tab>"
   end
 end
+
+_G.enter_complete = function()
+      if luasnip and luasnip.choice_active() then
+          return t '<Plug>luasnip-next-choice'
+      end
+      return vim.fn['compe#confirm'](t '<CR>')
+    end
 
 map("i", "<CR>", "compe#confirm('<CR>')", {expr = true})
 

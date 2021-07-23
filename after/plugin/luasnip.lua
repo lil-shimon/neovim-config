@@ -11,6 +11,7 @@ local function copy(args)
 	return args[1]
 end
 
+
 local function char_count_same(c1, c2)
 	local line = vim.api.nvim_get_current_line()
 	local _, ct1 = string.gsub(line, c1, '')
@@ -112,7 +113,8 @@ ls.snippets = {
 		s({trig="\""}, { t({"\""}), i(1), t({"\""}), i(0) }, neg, even_count, '"'),
 		s({trig="{;"}, { t({"{","\t"}), i(1), t({"", "}"}), i(0) }),
     s({trig = 'sample'}, {
-      t({"hello !"}),
+      t({"hello !"}),i(1),
+      t({"world !"}),i(2),
       i(0)
     }),
 	},
