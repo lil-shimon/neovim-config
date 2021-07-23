@@ -111,6 +111,10 @@ ls.snippets = {
 		s({trig="'"}, { t({"'"}), i(1), t({"'"}), i(0) }, neg, even_count, '\''),
 		s({trig="\""}, { t({"\""}), i(1), t({"\""}), i(0) }, neg, even_count, '"'),
 		s({trig="{;"}, { t({"{","\t"}), i(1), t({"", "}"}), i(0) }),
+    s({trig = 'sample'}, {
+      t({"hello !"}),
+      i(0)
+    }),
 	},
 	java = {
 		s({trig="fn"}, {
@@ -147,3 +151,4 @@ ls.snippets = {
 		ls.parser.parse_snippet({trig = "fn"}, "/// $1\nfn $2($3) ${4:-> $5 }\\{\n\t$0\n\\}")
 	}
 }
+
