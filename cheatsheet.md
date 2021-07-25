@@ -27,6 +27,8 @@
 - `<silent> \\` : Telescope buffers
 - `<silent> ;;` : Telescope help
 - `<leader>f` : formatter
+- `<Tab>` : normal: indent. luasnip: jump to next. compe: complete
+- `<s-Tab>f` : luasnip: jump to prev. compe: select from bottom
 
 
 ## Insert Mode 
