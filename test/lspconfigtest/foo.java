@@ -19,3 +19,18 @@ public void myFunc() {
   
 }
 
+/**
+ * created by luasnip function
+ */
+public void myFunc() {
+
+}
+
+
+/**
+ * s tab?
+ */
+public void myFunc() {
+  is working
+}
+

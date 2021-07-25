@@ -51,24 +51,46 @@ local check_back_space = function()
   end
 end
 
+local function prequire(...)
+    local status, lib = pcall(require, ...)
+    if status then
+        return lib
+    end
+    return nil
+end
+
+local luasnip = prequire "luasnip"
+
 -- Use (s-)tab to:
 --- move to prev/next item in completion menuone
 --- jump to prev/next snippet's placeholder
 _G.tab_complete = function()
   if vim.fn.pumvisible() == 1 then
     return t "<C-n>"
+  elseif luasnip and luasnip.expand_or_jumpable() then
+    return t '<Plug>luasnip-expand-or-jump'
   elseif check_back_space then
     return t "<Tab>"
   else
     return vim.fn["compe#complete"]()
   end
 end
+
 _G.s_tab_complete = function()
   if vim.fn.pumvisible() == 1 then
     return t "<C-p>"
+  elseif luasnip and luasnip.jumpable(-1) then
+    return t '<Plug>luasnip-jump-prev'
   else
     return t "<S-Tab>"
   end
+end
+
+_G.enter_complete = function()
+  if luasnip and luasnip.choice_active() then 
+    return t '<Plug>luasnip-next-choice'
+  end
+  return vim.fn['compe#confirm'](t '<CR>')
 end
 
 map("i", "<CR>", "compe#confirm('<CR>')", {expr = true})
@@ -76,8 +98,8 @@ map("i", "<CR>", "compe#confirm('<CR>')", {expr = true})
 map("i", "<Tab>", "v:lua.tab_complete()", {noremap = false, expr = true})
 map("s", "<Tab>", "v:lua.tab_complete()", {noremap = false, expr = true})
 
-map("i", "<S-Tab>", "v:lua.tab_complete()", {noremap = false, expr = true})
-map("s", "<S-Tab>", "v:lua.tab_complete()", {noremap = false, expr = true})
+map("i", "<S-Tab>", "v:lua.s_tab_complete()", {noremap = false, expr = true})
+map("s", "<S-Tab>", "v:lua.s_tab_complete()", {noremap = false, expr = true})
 
 map("i", "<C-u>", "compe#scroll({ 'delta': +4 })", {noremap = false, expr = true})
 map("i", "<C-d>", "compe#scroll({ 'delta': -4 })", {noremap = false, expr = true})

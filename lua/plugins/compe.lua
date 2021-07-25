@@ -19,8 +19,7 @@ require "compe".setup {
   documentation = true,
   max_abbr_width = 100,
   max_kind_width = 100,
-  max_menu_width = 100,
-  source = {
+  max_menu_width = 100, source = {
     path = {menu = " ", priority = 500},
     buffer = {menu = " ", priority = 500},
     nvim_lsp = {menu = " ", priority = 500},
