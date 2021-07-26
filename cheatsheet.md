@@ -195,8 +195,6 @@
 
 # luasnip snippets
 
-### after implement luasnip instead of UltiSnips, those snips are available
-
 
 ## React
 
