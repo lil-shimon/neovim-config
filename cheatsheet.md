@@ -193,6 +193,20 @@
 ---
 
 
+#luasnip snippets
+
+###after implement luasnip instead of UltiSnips, those snips are available
+
+
+##React
+
+- `imr`        :  import React from 'react'
+- `im`        :  import statement snip
+
+
+---
+
+
 ## fish keymap
 
 - `<C-R>` : peco ( search history )

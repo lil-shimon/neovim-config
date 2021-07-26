@@ -151,6 +151,10 @@ ls.snippets = {
 	},
 	rust = {
 		ls.parser.parse_snippet({trig = "fn"}, "/// $1\nfn $2($3) ${4:-> $5 }\\{\n\t$0\n\\}")
-	}
+	},
+  javascriptreact = {
+    s({trig="imr"}, t({"import React from 'react'"}), i(0)),
+    s({trig="im"}, {t({"import "}), i(1, "{ :module name}"), t({" from "}), i(2, "{ :from where? }")},  i(0)),
+  },
 }
 
