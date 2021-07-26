@@ -65,6 +65,13 @@ nvim_lsp.tsserver.setup {
 nvim_lsp.pyright.setup{}
 nvim_lsp.intelephense.setup {}
 nvim_lsp.dockerls.setup{}
+nvim_lsp.stylelint_lsp.setup{
+  settings = {
+    stylelintplus = {
+      -- see available options in stylelint-lsp documentation
+    }
+  }
+}
 
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
