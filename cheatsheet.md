@@ -193,12 +193,12 @@
 ---
 
 
-#luasnip snippets
+# luasnip snippets
 
-###after implement luasnip instead of UltiSnips, those snips are available
+### after implement luasnip instead of UltiSnips, those snips are available
 
 
-##React
+## React
 
 - `imr`        :  import React from 'react'
 - `im`        :  import statement snip
