@@ -200,6 +200,7 @@
 
 - `imr`        :  import React from 'react'
 - `im`        :  import statement snip
+- `cm`        :  oneline comment
 
 
 ## java
