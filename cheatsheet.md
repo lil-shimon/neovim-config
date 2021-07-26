@@ -202,6 +202,16 @@
 - `im`        :  import statement snip
 
 
+## java
+
+- `fn`        :  basic function statement
+
+
+## rust
+
+- `fn`        :  basic function statement
+
+
 ---
 
 
