@@ -198,9 +198,9 @@ ls.snippets = {
 	},
   javascriptreact = {
     s({trig="imr"}, t({"import React from 'react'"}), i(0)),
-    s({trig="im"}, {t({"import "}), i(1, "{ :module name}"), t({" from "}), i(2, "{ :from where? }")},  i(0)),
-    s({trig="cm"}, {t({"/** "}), i(1, "comment description"), t({" */"})},  i(0)),
- )   s({trig="clg"}, {t({"console.log(\""}), i(1), t({"\""}), i(2), t({")"}) }, i(0)),
+    s({trig="im"},  {t({"import "}),        i(1, "{ :module name}"),     t({" from "}), i(2, "{ :from where? }")},  i(0)),
+    s({trig="cm"},  {t({"/** "}),           i(1, "comment description"), t({" */"})},   i(0)),
+    s({trig="clg"}, {t({"console.log(\""}), i(1),                        t({"\""}),     i(2), t({")"})},  i(0)),
   },
 }
 
