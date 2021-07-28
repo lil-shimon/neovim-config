@@ -29,6 +29,11 @@
 - `<leader>f` : formatter
 - `<Tab>` : normal: indent. luasnip: jump to next. compe: complete
 - `<s-Tab>f` : luasnip: jump to prev. compe: select from bottom
+- `<C-u> : scroll up smoothly
+- `<C-d> : scroll down smoothly
+- `<zz> : scroll screen center
+- `<zt> : scroll screen top
+- `<zb> : scroll screen bottom
 
 
 ## Insert Mode 

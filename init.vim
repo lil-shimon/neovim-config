@@ -349,5 +349,11 @@ Plug 'hrsh7th/nvim-compe'
 
 
 
+" ---------------------------------------
+"        karb94/neoscroll.nvim
+" ---------------------------------------
+Plug 'karb94/neoscroll.nvim'
+
+
 call plug#end()
 
