@@ -21,7 +21,7 @@ name = 'aylin' hook_add = '''
   autocmd ColorScheme * highlight CursorLine guibg=#E72D21
   autocmd ColorScheme * highlight CursorColumn guibg=#002c54
   autocmd ColorScheme * highlight Visual guifg=#E72D21
-  autocmd ColorScheme * highlight Search guibg=#E72D21 guifg=#ffffff
+  autocmd ColorScheme * highlight Search guibg=#002c54 guifg=#E72D21
   highlight Normal ctermbg=none guibg=NONE
   highlight NonText ctermbg=none guibg=NONE
   highlight LineNr ctermbg=none guibg=NONE
