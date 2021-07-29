@@ -18,8 +18,9 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'AhmedAbdulrahman/aylin.vim'
 name = 'aylin' hook_add = '''
-  autocmd ColorScheme * highlight CursorLine guibg=#efb509
+  autocmd ColorScheme * highlight CursorLine guibg=#E72D21
   autocmd ColorScheme * highlight CursorColumn guibg=#002c54
+  autocmd ColorScheme * highlight Visual guifg=#E72D21
   highlight Normal ctermbg=none guibg=NONE
   highlight NonText ctermbg=none guibg=NONE
   highlight LineNr ctermbg=none guibg=NONE
@@ -428,7 +429,6 @@ name="cyberpunk"
 repo = "Shadorain/shadotheme"
 name = "shadotheme"
 hook_add = """"
- autocmd ColorScheme * highlight Comment ctermfg=220 guisp=#c9083f guibg=NONE
 """
 
 
@@ -446,7 +446,7 @@ name = 'lumiere'
 hook_add = """
   colorscheme lumiere
   autocmd ColorScheme * highlight SpecialKey guibg=NONE
-  autocmd ColorScheme * highlight Comment guibg=NONE guisp=NONE guifg=NONE ctermfg=NONE gui=NONE
+  autocmd ColorScheme * highlight Comment guibg=NONE guisp=NONE guifg=#E72D21 ctermfg=NONE gui=NONE
 """
 
 # ---------------------------------------
