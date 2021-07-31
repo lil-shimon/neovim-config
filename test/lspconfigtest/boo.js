@@ -32,3 +32,30 @@ function HelloWorld({
     </div>
   );
 }
+
+
+
+
+todos table, items, posts, users
+todos, users, posts
+
+## wanna get user todo post by todoId #########################################################################################
+
+1. todoController  (fat controller) => (todo model) $this->user->find($id);
+
+2. todoService($todoId) ==  todoRepository($id) userRepository($id) postRepository($id)
+
+3. todo Repository todos,
+3. user Repository users.todo_id, 
+3. post Repository posts.todo_id
+
+
+## wanna get user post by userId #########################################################################################
+
+1. userController  (fat controller) => (todo model) $this->user->find($id);
+
+2. userService($todoId) ==  userRepository($id) postRepository($id)
+
+3. user Repository users.todo_id, 
+3. post Repository posts.todo_id
+

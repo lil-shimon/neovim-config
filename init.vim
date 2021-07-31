@@ -244,6 +244,9 @@ augroup vimrc-filetype
   autocmd FileType php setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
 
 
+  autocmd FileType python setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
+
+
 if &compatible    
   set nocompatible               " Be iMproved    
 endif  
