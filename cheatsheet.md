@@ -10,6 +10,9 @@
 - `:hi`  :  show what colors are you use on vim
 - `.`  :  前回の動作を再度使う (vim-repeat)
 - `K`  :  カーソル上の文字の説明をみる
+- `gd`  : search word on cursor (go to definition)
+- `gh`  : lsp-saga lsp finder
+- `<C-j>`  : lsp-saga diagnostic_jump_next
 - `space b`  :  open browser smart search by key word on cursor
 - `<leader>j`  :  auto import (React)
 - `<C-w>left`  :  resize window
