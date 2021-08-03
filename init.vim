@@ -43,6 +43,17 @@ highlight EndOfBuffer ctermbg=none
 let g:seiya_auto_enable=1 "背景透過 for vim
 let g:seiya_target_groups = has('nvim') ? ['guibg'] : ['ctermbg'] "for neovim
 
+autocmd ColorScheme * highlight CursorLine guibg=#8C1D06
+autocmd ColorScheme * highlight CursorColumn guibg=#002c54
+autocmd ColorScheme * highlight Visual guifg=#E72D21
+autocmd ColorScheme * highlight Search guibg=#002c54 guifg=#E72D21 
+autocmd ColorScheme * highlight SpecialKey guibg=NONE
+" autocmd ColorScheme * highlight Comment guibg=NONE guisp=NONE guifg=#E72D21 ctermfg=NONE gui=NONE
+" highlight Normal ctermbg=none guibg=NONE 
+" highlight NonText ctermbg=none guibg=#E72D21 highlight LineNr ctermbg=none guibg=NONE
+" highlight Folded ctermbg=none guibg=NONE
+" highlight SpecialKey ctermbg=none guibg=NONE
+" highlight EndOfBuffer ctermbg=none guibg=NONE
 
 "-----------------------------------------
 "       ColorScheme function (hi)

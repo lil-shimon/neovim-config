@@ -8,7 +8,9 @@ repo = 'Shougo/dein.vim'
 # ---------------------------------------
 #             colorscheme ayu
 # ---------------------------------------
-[[plugins]] repo = 'ayu-theme/ayu-vim' name = 'ayu'
+[[plugins]] 
+repo = 'ayu-theme/ayu-vim' 
+name = 'ayu'
 
 
 # ---------------------------------------
@@ -18,16 +20,6 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'AhmedAbdulrahman/aylin.vim'
 name = 'aylin' hook_add = '''
-  autocmd ColorScheme * highlight CursorLine guibg=#E72D21
-  autocmd ColorScheme * highlight CursorColumn guibg=#002c54
-  autocmd ColorScheme * highlight Visual guifg=#E72D21
-  autocmd ColorScheme * highlight Search guibg=#002c54 guifg=#E72D21
-  highlight Normal ctermbg=none guibg=NONE
-  highlight NonText ctermbg=none guibg=NONE
-  highlight LineNr ctermbg=none guibg=NONE
-  highlight Folded ctermbg=none guibg=NONE
-  highlight SpecialKey ctermbg=none guibg=NONE
-  highlight EndOfBuffer ctermbg=none guibg=NONE
 '''
 
 
@@ -445,9 +437,7 @@ name = 'paige'
 repo = 'alexanderjeurissen/lumiere.vim'
 name = 'lumiere'
 hook_add = """
-  colorscheme lumiere
-  autocmd ColorScheme * highlight SpecialKey guibg=NONE
-  autocmd ColorScheme * highlight Comment guibg=NONE guisp=NONE guifg=#E72D21 ctermfg=NONE gui=NONE
+  colorscheme abyss
 """
 
 # ---------------------------------------
