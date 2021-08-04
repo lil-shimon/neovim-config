@@ -62,6 +62,8 @@ nvim_lsp.tsserver.setup {
 
 }
 
+nvim_lsp.rust_analyzer.setup{}
+nvim_lsp.rls.setup{}
 nvim_lsp.pyright.setup{}
 nvim_lsp.intelephense.setup {}
 nvim_lsp.dockerls.setup{}

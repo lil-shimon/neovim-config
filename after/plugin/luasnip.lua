@@ -1,9 +1,7 @@
 local ls = require'luasnip'
 local s = ls.s
 local sn = ls.sn
-local t = ls.t
-local i = ls.i
-local f = ls.f
+local t = ls.t local i = ls.i local f = ls.f
 local c = ls.c
 local d = ls.d
 
@@ -194,7 +192,8 @@ ls.snippets = {
 		})
 	},
 	rust = {
-		ls.parser.parse_snippet({trig = "fn"}, "/// $1\nfn $2($3) ${4:-> $5 }\\{\n\t$0\n\\}")
+		ls.parser.parse_snippet({trig = "fn"}, "/// $1\nfn $2($3) ${4:-> $5 }\\{\n\t$0\n\\}"),
+    s({trig="cm"},  {t({"/** "}),           i(1, "comment description"), t({" */"})},   i(0)),
 	},
   javascriptreact = {
     s({trig="imr"}, t({"import React from 'react'"}), i(0)),
