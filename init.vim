@@ -413,6 +413,11 @@ Plug 'shaunsingh/moonlight.nvim'
 Plug 'hrsh7th/nvim-compe'
 
 
+" ---------------------------------------
+"      vim-scripts/darktango.vim 
+" ---------------------------------------
+Plug 'vim-scripts/darktango.vim'
+
 
 " ---------------------------------------
 "        karb94/neoscroll.nvim

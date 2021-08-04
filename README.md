@@ -100,6 +100,7 @@ Some commands are in cheatsheet.md.
 - moonlight
 - [rafamadriz/neon](https://github.com/rafamadriz/neon)
 - [whatyouhide/vim-gotham](https://github.com/whatyouhide/vim-gotham)
+- [vim-scripts/darktango.vim](https://github.com/vim-scripts/darktango.vim)
 
 ---
 
