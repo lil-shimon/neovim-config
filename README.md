@@ -81,10 +81,8 @@ Some commands are in cheatsheet.md.
 - bignimbus/pop-punk.vim
 - mhartington/formatter.nvim
 - wakatime/vim-wakatime
-- [rafamadriz/neon](https://github.com/rafamadriz/neon)
 - [hrsh7th/nvim-compe](https://github.com/hrsh7th/nvim-compe)
 - [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim)
-- [whatyouhide/vim-gotham](https://github.com/whatyouhide/vim-gotham)
 
 
 ---
@@ -99,8 +97,9 @@ Some commands are in cheatsheet.md.
 - abyss
 - pop-ponk
 - xshado
-- neon
 - moonlight
+- [rafamadriz/neon](https://github.com/rafamadriz/neon)
+- [whatyouhide/vim-gotham](https://github.com/whatyouhide/vim-gotham)
 
 ---
 
