@@ -84,6 +84,7 @@ Some commands are in cheatsheet.md.
 - [rafamadriz/neon](https://github.com/rafamadriz/neon)
 - [hrsh7th/nvim-compe](https://github.com/hrsh7th/nvim-compe)
 - [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim)
+- [whatyouhide/vim-gotham](https://github.com/whatyouhide/vim-gotham)
 
 
 ---

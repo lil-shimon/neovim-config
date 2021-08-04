@@ -47,7 +47,7 @@ autocmd ColorScheme * highlight CursorLine guibg=#8C1D06
 autocmd ColorScheme * highlight CursorColumn guibg=#002c54
 autocmd ColorScheme * highlight Visual guifg=#E72D21
 autocmd ColorScheme * highlight Search guibg=#002c54 guifg=#E72D21 
-autocmd ColorScheme * highlight SpecialKey guibg=NONE
+" autocmd ColorScheme * highlight SpecialKey guibg=NONE
 " autocmd ColorScheme * highlight Comment guibg=NONE guisp=NONE guifg=#E72D21 ctermfg=NONE gui=NONE
 " highlight Normal ctermbg=none guibg=NONE 
 " highlight NonText ctermbg=none guibg=#E72D21 highlight LineNr ctermbg=none guibg=NONE
@@ -393,6 +393,12 @@ Plug 'wakatime/vim-wakatime'
 "           rafamadriz/neon 
 " ---------------------------------------
 Plug 'rafamadriz/neon'
+
+
+" ---------------------------------------
+"        whatyouhide/vim-gotham
+" ---------------------------------------
+Plug 'whatyouhide/vim-gotham'
 
 
 " ---------------------------------------
