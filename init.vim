@@ -34,12 +34,6 @@ let g:ale_javascript_prettier_use_local_config = 1
 "              ColorScheme
 "-----------------------------------------
 set termguicolors     " enable true colors support
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
-highlight LineNr ctermbg=none
-highlight Folded ctermbg=none
-highlight SpacialKey guibg=none
-highlight EndOfBuffer ctermbg=none 
 let g:seiya_auto_enable=1 "背景透過 for vim
 let g:seiya_target_groups = has('nvim') ? ['guibg'] : ['ctermbg'] "for neovim
 

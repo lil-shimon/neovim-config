@@ -19,7 +19,8 @@ name = 'ayu'
 # to change change specific color, you have to declare before set colorscheme
 [[plugins]]
 repo = 'AhmedAbdulrahman/aylin.vim'
-name = 'aylin' hook_add = '''
+name = 'aylin' 
+hook_add = '''
 '''
 
 
