@@ -14,9 +14,7 @@ local on_attach = function(client, bufnr)
   local opts = { noremap = true, silent = true }
 
   buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
-
-   require'completion'.on_attach(client, bufnr)
-
+require'completion'.on_attach(client, bufnr)
    protocol.CompletionItemKind = {
     '', -- Text
     '', -- Method
@@ -67,6 +65,7 @@ nvim_lsp.rls.setup{}
 nvim_lsp.pyright.setup{}
 nvim_lsp.intelephense.setup {}
 nvim_lsp.dockerls.setup{}
+nvim_lsp.dartls.setup{}
 nvim_lsp.stylelint_lsp.setup{
   settings = {
     stylelintplus = {
