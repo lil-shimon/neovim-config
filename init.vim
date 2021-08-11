@@ -419,5 +419,18 @@ Plug 'vim-scripts/darktango.vim'
 Plug 'karb94/neoscroll.nvim'
 
 
+
+" - for flutter -------------------------
+"      nvim-lua/plenary.nvim
+" ---------------------------------------
+Plug 'nvim-lua/plenary.nvim'
+
+
+" - for flutter -------------------------
+"     akinsho/flutter-tools.nvim
+" ---------------------------------------
+Plug 'akinsho/flutter-tools.nvim'
+
+
 call plug#end()
 

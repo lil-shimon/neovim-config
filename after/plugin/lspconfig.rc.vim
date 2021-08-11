@@ -5,6 +5,7 @@ endif
 lua << EOF
 
 local nvim_lsp = require('lspconfig')
+local flutter_lsp = require('flutter-tools')
 local protocol = require('vim.lsp.protocol')
 local on_attach = function(client, bufnr)
   
@@ -66,12 +67,12 @@ nvim_lsp.pyright.setup{}
 nvim_lsp.intelephense.setup {}
 nvim_lsp.dockerls.setup{}
 nvim_lsp.dartls.setup{}
-nvim_lsp.stylelint_lsp.setup{
-  settings = {
-    stylelintplus = {
-      -- see available options in stylelint-lsp documentation
-    }
-  }
+flutter_lsp.setup{
+  ui = {
+    -- the border type to use for all floating windows, the same options/formats
+    -- used for ":h nvim_open_win" e.g. "single" | "shadow" | {<table-of-eight-chars>}
+    border = "rounded",
+  },
 }
 
 nvim_lsp.diagnosticls.setup {
