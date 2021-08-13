@@ -67,6 +67,8 @@ nvim_lsp.pyright.setup{}
 nvim_lsp.intelephense.setup {}
 nvim_lsp.dockerls.setup{}
 nvim_lsp.dartls.setup{}
+nvim_lsp.dockerls.setup{}
+nvim_lsp.yamlls.setup{}
 flutter_lsp.setup{
   ui = {
     -- the border type to use for all floating windows, the same options/formats
